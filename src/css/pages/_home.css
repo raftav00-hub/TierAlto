@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Page — Home (index.html)
+   ========================================================================== */
+
+.hero {
+  padding-block: var(--space-24);
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: #fff;
+}
+
+.hero__title {
+  color: #fff;
+  font-size: var(--text-5xl);
+  margin-bottom: var(--space-6);
+}
+
+.hero__subtitle {
+  font-size: var(--text-xl);
+  color: rgb(255 255 255 / 0.8);
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: var(--space-8);
+}
+
+@media (max-width: 768px) {
+  .hero__title { font-size: var(--text-3xl); }
+  .hero__subtitle { font-size: var(--text-base); }
+}
