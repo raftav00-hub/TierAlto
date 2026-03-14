@@ -3,58 +3,80 @@
    ========================================================================== */
 
 :root {
-  /* Colors */
-  --color-primary:     #1a1a2e;
-  --color-secondary:   #16213e;
-  --color-accent:      #0f3460;
-  --color-highlight:   #e94560;
-  --color-text:        #1a1a1a;
-  --color-text-muted:  #6b7280;
-  --color-bg:          #ffffff;
-  --color-bg-alt:      #f9fafb;
-  --color-border:      #e5e7eb;
+  /* Brand Colors — matched to logo */
+  --color-navy:            #1B3A5C;   /* Deep navy — headers, dark sections */
+  --color-navy-mid:        #152e4a;   /* Slightly deeper — credibility bar, footer */
+  --color-navy-light:      #2E7BAF;   /* Mid blue — borders & accents on dark bg */
+  --color-blue:            #4A9CC7;   /* Light blue — CTAs, highlights */
+  --color-blue-hover:      #3d8ab5;   /* Light blue hover */
+
+  /* Semantic aliases */
+  --color-primary:         var(--color-navy);
+  --color-secondary:       var(--color-navy-mid);
+  --color-accent:          var(--color-navy-light);
+  --color-highlight:       var(--color-blue);
+  --color-highlight-hover: var(--color-blue-hover);
+
+  /* Text */
+  --color-text:            #1a202c;
+  --color-text-muted:      #4a5568;
+  --color-text-light:      #e2e8f0;
+  --color-text-light-muted: rgb(226 232 240 / 0.68);
+
+  /* Backgrounds */
+  --color-bg:              #ffffff;
+  --color-bg-alt:          #F0EDE8;   /* Warm cream — matches logo background */
+  --color-border:          #dde3ea;
+  --color-border-dark:     rgb(46 123 175 / 0.22);
 
   /* Typography */
-  --font-sans:   system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-mono:   "Fira Code", "Cascadia Code", monospace;
-  --text-xs:     0.75rem;
-  --text-sm:     0.875rem;
-  --text-base:   1rem;
-  --text-lg:     1.125rem;
-  --text-xl:     1.25rem;
-  --text-2xl:    1.5rem;
-  --text-3xl:    1.875rem;
-  --text-4xl:    2.25rem;
-  --text-5xl:    3rem;
+  --font-sans: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Fira Code", "Cascadia Code", monospace;
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
 
   /* Spacing */
   --space-1:  0.25rem;
   --space-2:  0.5rem;
   --space-3:  0.75rem;
   --space-4:  1rem;
+  --space-5:  1.25rem;
   --space-6:  1.5rem;
   --space-8:  2rem;
+  --space-10: 2.5rem;
   --space-12: 3rem;
   --space-16: 4rem;
+  --space-20: 5rem;
   --space-24: 6rem;
+  --space-32: 8rem;
 
   /* Layout */
   --container-max: 1200px;
   --container-pad: var(--space-6);
 
   /* Border radius */
-  --radius-sm:  0.25rem;
-  --radius-md:  0.5rem;
-  --radius-lg:  1rem;
+  --radius-sm:   0.25rem;
+  --radius-md:   0.5rem;
+  --radius-lg:   1rem;
+  --radius-xl:   1.5rem;
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm:  0 1px 2px rgb(0 0 0 / 0.05);
-  --shadow-md:  0 4px 6px rgb(0 0 0 / 0.07);
-  --shadow-lg:  0 10px 15px rgb(0 0 0 / 0.1);
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px rgb(0 0 0 / 0.07);
+  --shadow-lg: 0 10px 25px rgb(0 0 0 / 0.12);
+  --shadow-xl: 0 20px 40px rgb(0 0 0 / 0.15);
 
   /* Transitions */
-  --transition-fast:   150ms ease;
-  --transition-base:   250ms ease;
-  --transition-slow:   400ms ease;
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
 }

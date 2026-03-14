@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary SEO -->
-  <title>TierAlto — [Tagline Here]</title>
-  <meta name="description" content="[Unique page description, 120–158 characters, summarizing what TierAlto offers and why users should visit.]" />
+  <title>TierAlto | Device Provisioning Automation for Distributors, MSPs, and VARs</title>
+  <meta name="description" content="TierAlto is the device provisioning layer for distributors, MSPs, and VARs. We pre-configure, stage, and validate any VoIP device — any brand, any platform — so your customers get a flawless out-of-box experience every time." />
   <link rel="canonical" href="https://tieralto.com/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tieralto.com/" />
-  <meta property="og:title" content="TierAlto — [Tagline Here]" />
-  <meta property="og:description" content="[Same or similar to meta description.]" />
+  <meta property="og:title" content="TierAlto | Device Provisioning Automation for Distributors, MSPs, and VARs" />
+  <meta property="og:description" content="TierAlto is the device provisioning layer for distributors, MSPs, and VARs. Any VoIP device, any brand, any platform — pre-configured, staged, and validated before it ships." />
   <meta property="og:image" content="https://tieralto.com/src/assets/images/og-image.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="TierAlto — [Tagline Here]" />
-  <meta name="twitter:description" content="[Same or similar to meta description.]" />
+  <meta name="twitter:title" content="TierAlto | Device Provisioning Automation for Distributors, MSPs, and VARs" />
+  <meta name="twitter:description" content="The device provisioning layer for the channel. Any VoIP device, any brand, any platform — pre-configured and validated before it ships." />
   <meta name="twitter:image" content="https://tieralto.com/src/assets/images/og-image.jpg" />
 
   <!-- Favicon -->
@@ -27,14 +27,31 @@
   <link rel="icon" href="/src/assets/icons/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/src/assets/icons/apple-touch-icon.png" />
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "ProfessionalService",
     "name": "TierAlto",
     "url": "https://tieralto.com",
-    "logo": "https://tieralto.com/src/assets/images/logo.png",
+    "logo": "https://tieralto.com/src/images/logo.jpeg",
+    "email": "info@tieralto.com",
+    "telephone": "+18888888888",
+    "description": "TierAlto is the device provisioning layer for distributors, MSPs, and VARs. We pre-configure, stage, and validate any VoIP device — any brand, any platform.",
+    "areaServed": "North America",
+    "serviceType": [
+      "Device Pre-Configuration and Staging",
+      "Provisioning Automation Strategy",
+      "Deployment Design",
+      "Firmware and Configuration Management",
+      "Post-Deployment Support",
+      "Technology Recommendations"
+    ],
     "sameAs": []
   }
   </script>
@@ -44,15 +61,17 @@
 </head>
 <body>
 
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header" role="banner">
     <nav class="nav" aria-label="Main navigation">
-      <a class="nav__logo" href="/">
-        <img src="/src/assets/images/logo.svg" alt="TierAlto logo" width="120" height="40" />
+      <a class="nav__logo" href="/" aria-label="TierAlto — Home">
+        <img src="/src/images/logo.jpeg" alt="TierAlto" class="nav__logo-img" width="44" height="44" />
       </a>
-      <ul class="nav__list" role="list">
-        <li><a class="nav__link" href="/">Home</a></li>
-        <li><a class="nav__link" href="/src/pages/about.html">About</a></li>
-        <li><a class="nav__link" href="/src/pages/contact.html">Contact</a></li>
+      <ul class="nav__list" role="list" id="nav-list">
+        <li><a class="nav__link" href="#who-we-serve">Who We Serve</a></li>
+        <li><a class="nav__link" href="#services">Services</a></li>
+        <li><a class="nav__link nav__link--cta" href="#contact">Get in Touch</a></li>
       </ul>
       <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-list">
         <span></span><span></span><span></span>
@@ -62,11 +81,232 @@
 
   <main id="main-content">
 
+    <!-- ══════════════════════════════ HERO ══════════════════════════════ -->
     <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
       <div class="container">
-        <h1 class="hero__title" id="hero-heading">Welcome to TierAlto</h1>
-        <p class="hero__subtitle">[Short value proposition — one or two sentences.]</p>
-        <a class="btn btn--primary" href="/src/pages/contact.html">Get Started</a>
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-reveal>For Distributors, MSPs &amp; VARs</p>
+          <h1 class="hero__title" id="hero-heading" data-reveal data-reveal-delay="1">
+            The Device Provisioning Layer Your Channel Is Missing
+          </h1>
+          <p class="hero__subtitle" data-reveal data-reveal-delay="2">
+            We pre-configure, stage, and validate any VoIP device — any brand, any platform — so distributors can offer provisioning as a service, installers spend less time on site, and enterprises get a flawless out-of-box experience every time.
+          </p>
+          <div class="hero__actions" data-reveal data-reveal-delay="3">
+            <a class="btn btn--primary btn--lg" href="#contact">Book a Discovery Call</a>
+            <a class="btn btn--ghost btn--lg" href="#who-we-serve">Who We Serve</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ STATS BAR ══════════════════════════════ -->
+    <section class="credibility-bar" aria-label="Company at a glance">
+      <div class="container">
+        <ul class="credibility-bar__list" role="list">
+          <li class="credibility-bar__item" data-reveal>
+            <span class="credibility-bar__stat">20+</span>
+            <span class="credibility-bar__label">Years of Enterprise VoIP Experience</span>
+          </li>
+          <li class="credibility-bar__item" data-reveal data-reveal-delay="1">
+            <span class="credibility-bar__stat">55,000+</span>
+            <span class="credibility-bar__label">Devices in a Single Deployment</span>
+          </li>
+          <li class="credibility-bar__item" data-reveal data-reveal-delay="2">
+            <span class="credibility-bar__stat">1,000,000+</span>
+            <span class="credibility-bar__label">Devices Supported Across North America</span>
+          </li>
+          <li class="credibility-bar__item" data-reveal data-reveal-delay="3">
+            <span class="credibility-bar__stat">100%</span>
+            <span class="credibility-bar__label">Platform Agnostic</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ════════════════════════ WHO WE SERVE ════════════════════════════ -->
+    <section class="services section" id="who-we-serve" aria-labelledby="audience-heading">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <p class="section__eyebrow">Who We Serve</p>
+          <h2 class="section__title" id="audience-heading">Built for the Entire Channel</h2>
+          <p class="section__subtitle">Whether you distribute devices, install them, or sell managed services — TierAlto plugs into your model and handles the provisioning complexity you don't want to build in-house.</p>
+        </div>
+        <ul class="services__grid" role="list">
+
+          <!-- Distributors -->
+          <li class="service-card" data-reveal>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <p class="service-card__eyebrow-label">Distributors &amp; Large Channel Partners</p>
+            <h3 class="service-card__title">Offer Provisioning as a White-Label Service</h3>
+            <p class="service-card__body">Your customers expect devices to arrive ready to deploy. We pre-configure every device before it leaves your warehouse — tested, validated, and labeled — so you can offer provisioning as a value-added managed service without adding headcount. Works with any inventory, any vendor, any platform.</p>
+          </li>
+
+          <!-- MSPs & VARs -->
+          <li class="service-card service-card--featured" data-reveal data-reveal-delay="1">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <p class="service-card__eyebrow-label">MSPs &amp; VARs</p>
+            <h3 class="service-card__title">Be the Expert Your Customers Think You Are</h3>
+            <p class="service-card__body">Your customers don't know the difference between a Poly, Yealink, or Cisco configuration — and they don't want to. We handle the device complexity behind the scenes so you show up looking like the expert, every time. Less time on site. Fewer callbacks. Happier customers.</p>
+          </li>
+
+          <!-- Installers -->
+          <li class="service-card" data-reveal data-reveal-delay="2">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <p class="service-card__eyebrow-label">Installers &amp; Field Teams</p>
+            <h3 class="service-card__title">Plug It In. Walk Out.</h3>
+            <p class="service-card__body">When devices arrive pre-configured and validated, your team installs faster and moves on to the next job. No laptop. No configuration scripts. No callbacks. We do the hard work before the device ever leaves the warehouse.</p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════════════════ THE FULL DEVICE LIFECYCLE ══════════════════ -->
+    <section class="section section--alt" id="services" aria-labelledby="lifecycle-heading">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <p class="section__eyebrow">What We Do</p>
+          <h2 class="section__title" id="lifecycle-heading">The Full Device Lifecycle</h2>
+          <p class="section__subtitle">From the moment a device is ordered to the day it needs to be upgraded — we handle the technical complexity so you don't have to.</p>
+        </div>
+        <ul class="lifecycle__grid" role="list">
+          <li class="lifecycle-item" data-reveal>
+            <p class="lifecycle-item__number">01</p>
+            <h3 class="lifecycle-item__title">Pre-Configuration &amp; Staging</h3>
+            <p class="lifecycle-item__body">Every device configured, tested, and validated before it ships. We support any brand — Poly, Cisco, Yealink, Grandstream, AudioCodes, Fanvil, and more. Mixed-vendor environments welcome. This is where most deployments succeed or fail — we make sure yours succeeds.</p>
+          </li>
+          <li class="lifecycle-item" data-reveal data-reveal-delay="1">
+            <p class="lifecycle-item__number">02</p>
+            <h3 class="lifecycle-item__title">Deployment Design</h3>
+            <p class="lifecycle-item__body">Large rollout coming? We design the provisioning architecture, sequencing, and workflow before a single device ships. Built on experience with deployments ranging from hundreds to tens of thousands of devices.</p>
+          </li>
+          <li class="lifecycle-item" data-reveal data-reveal-delay="2">
+            <p class="lifecycle-item__number">03</p>
+            <h3 class="lifecycle-item__title">Provisioning Automation Strategy</h3>
+            <p class="lifecycle-item__body">We design the automation workflow — the tools, the templates, the sequencing — so your team can execute deployments cleanly and repeatably without relying on tribal knowledge or manual intervention.</p>
+          </li>
+          <li class="lifecycle-item" data-reveal data-reveal-delay="1">
+            <p class="lifecycle-item__number">04</p>
+            <h3 class="lifecycle-item__title">Firmware &amp; Configuration Management</h3>
+            <p class="lifecycle-item__body">Upgrades, downgrades, and configuration migrations planned and guided by someone who has done it at scale. We tell you exactly what to do, in what order, and how to avoid the failures most teams hit the hard way.</p>
+          </li>
+          <li class="lifecycle-item" data-reveal data-reveal-delay="2">
+            <p class="lifecycle-item__number">05</p>
+            <h3 class="lifecycle-item__title">Post-Deployment Support</h3>
+            <p class="lifecycle-item__body">Tier 1 support handled by our team. Tougher issues escalated and triaged directly with vendors. Your customers get expert support without you needing to build that capability in-house. We know the devices, the platforms, and the failure modes before you call.</p>
+          </li>
+          <li class="lifecycle-item" data-reveal data-reveal-delay="3">
+            <p class="lifecycle-item__number">06</p>
+            <h3 class="lifecycle-item__title">Technology Recommendations</h3>
+            <p class="lifecycle-item__body">Not sure which device to buy? We've deployed them all — across every major platform, at every scale. We give you vendor-neutral recommendations based on your environment, your platform, and your budget. Buy right the first time.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════════════ THE MIXED-VENDOR PROBLEM ════════════════════════ -->
+    <section class="problem section section--problem" id="problem" aria-labelledby="problem-heading">
+      <div class="container">
+        <div class="problem__layout" data-reveal>
+          <div class="problem__intro">
+            <p class="section__eyebrow">The Provisioning Reality</p>
+            <h2 class="problem__title" id="problem-heading">The Problem Nobody Talks About</h2>
+          </div>
+          <div class="problem__copy">
+            <p class="problem__text">Zero Touch Provisioning works great — until you have devices from multiple vendors. Cisco ZTP won't touch your Yealink phones. Poly's provisioning platform doesn't know your Grandstream devices exist. The moment you have a mixed-vendor environment — or you're migrating from one vendor to another — the automation breaks down and someone has to configure devices manually.</p>
+            <p class="problem__callout">That someone is us. Vendor-neutral, platform-agnostic, and experienced with the exact mixed-vendor complexity that ZTP can't solve.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════ CREDIBILITY ══════════════════════════════ -->
+    <section class="trust section section--dark" id="credibility" aria-labelledby="credibility-heading">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <p class="section__eyebrow">Our Track Record</p>
+          <h2 class="section__title section__title--light" id="credibility-heading">Enterprise Experience. Available to the Channel.</h2>
+        </div>
+        <p class="trust__body" data-reveal>TierAlto was built on 20+ years of hands-on experience at the intersection of device hardware, SIP architecture, and large-scale provisioning. We contributed to deployments ranging from a single 55,000&#8209;device government rollout to the ongoing management of fleets exceeding one million endpoints for major North American carriers. We bring that same expertise to every channel partner we work with — regardless of the size of the deployment.</p>
+        <ul class="trust__clients" role="list" aria-label="Clients we have served">
+          <li class="trust__client" data-reveal>Comcast</li>
+          <li class="trust__client" data-reveal data-reveal-delay="1">Bell Canada</li>
+          <li class="trust__client" data-reveal data-reveal-delay="2">AT&amp;T</li>
+          <li class="trust__client" data-reveal data-reveal-delay="3">Elections Canada</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ════════════════════════ SUPPORTED DEVICES ════════════════════════ -->
+    <section class="devices section" id="devices" aria-labelledby="devices-heading">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <p class="section__eyebrow">Supported Devices</p>
+          <h2 class="section__title" id="devices-heading">Any Device. Any Vendor. Any Platform.</h2>
+          <p class="section__subtitle">We configure devices to work on your platform — whatever that platform is.</p>
+        </div>
+        <ul class="device-grid" role="list" data-reveal>
+          <li class="device-badge">Poly</li>
+          <li class="device-badge">Cisco</li>
+          <li class="device-badge">Yealink</li>
+          <li class="device-badge">Grandstream</li>
+          <li class="device-badge">AudioCodes</li>
+          <li class="device-badge">Fanvil</li>
+        </ul>
+        <p class="devices__tagline" data-reveal>If it speaks SIP, we can configure it.</p>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════ CONTACT ══════════════════════════════ -->
+    <section class="contact section section--dark" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact__layout">
+          <div class="contact__text" data-reveal>
+            <p class="section__eyebrow">Let's Talk</p>
+            <h2 class="contact__title" id="contact-heading">Let's Talk About Your Deployment</h2>
+            <p class="contact__subtitle">Whether you're a distributor looking to offer provisioning as a service, an MSP tired of device headaches, or planning a large rollout — we'd love to hear about it. No pressure. Just a conversation.</p>
+            <a class="btn btn--primary btn--lg" href="mailto:info@tieralto.com?subject=Discovery%20Call%20Request">Book a Discovery Call</a>
+            <p class="contact__disclaimer">Discovery calls are 30 minutes. We'll listen first.</p>
+          </div>
+          <div class="contact__info" data-reveal data-reveal-delay="2">
+            <a class="contact__info-item" href="mailto:info@tieralto.com">
+              <span class="contact__info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </span>
+              <span>info@tieralto.com</span>
+            </a>
+            <a class="contact__info-item" href="tel:+18888888888">
+              <span class="contact__info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.34 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/>
+                </svg>
+              </span>
+              <span>888&#8209;888&#8209;8888</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -74,7 +314,28 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>&copy; <span id="year"></span> TierAlto. All rights reserved.</p>
+      <div class="footer__layout">
+        <div class="footer__brand">
+          <p class="footer__logo">Tier<span class="footer__logo-accent">Alto</span></p>
+          <p class="footer__tagline">The Device Provisioning Layer for the Channel</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <p class="footer__nav-title">Company</p>
+          <ul role="list">
+            <li><a href="/">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contact">
+          <p class="footer__nav-title">Contact</p>
+          <p><a href="mailto:info@tieralto.com">info@tieralto.com</a></p>
+          <p><a href="tel:+18888888888">888&#8209;888&#8209;8888</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> TierAlto. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 

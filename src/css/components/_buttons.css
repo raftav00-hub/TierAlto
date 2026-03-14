@@ -14,19 +14,36 @@
   line-height: 1;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
   text-decoration: none;
+  white-space: nowrap;
 }
 
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Primary — light blue */
 .btn--primary {
   background-color: var(--color-highlight);
   color: #fff;
 }
 
 .btn--primary:hover {
-  background-color: #c73652;
+  background-color: var(--color-highlight-hover);
+  box-shadow: 0 6px 20px rgb(74 156 199 / 0.4);
 }
 
+/* Secondary — navy outline */
 .btn--secondary {
   background-color: transparent;
   border-color: var(--color-primary);
@@ -38,6 +55,19 @@
   color: #fff;
 }
 
+/* Ghost — white outline on dark bg */
+.btn--ghost {
+  background-color: transparent;
+  border-color: rgb(255 255 255 / 0.35);
+  color: #fff;
+}
+
+.btn--ghost:hover {
+  background-color: rgb(255 255 255 / 0.08);
+  border-color: rgb(255 255 255 / 0.65);
+}
+
+/* Sizes */
 .btn--sm {
   padding: var(--space-2) var(--space-4);
   font-size: var(--text-sm);

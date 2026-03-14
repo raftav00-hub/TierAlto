@@ -9,22 +9,51 @@
   max-width: var(--container-max);
   margin-inline: auto;
   padding-inline: var(--container-pad);
-  height: 64px;
+  height: 68px;
+}
+
+/* Logo image */
+.nav__logo-img {
+  height: 44px;
+  width: auto;
+  border-radius: 6px;
+  display: block;
 }
 
 .nav__list {
   display: flex;
   align-items: center;
-  gap: var(--space-6);
+  gap: var(--space-8);
 }
 
 .nav__link {
+  font-size: var(--text-sm);
   font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-light-muted);
   transition: color var(--transition-fast);
 }
 
 .nav__link:hover {
-  color: var(--color-highlight);
+  color: #fff;
+}
+
+.nav__link--cta {
+  background-color: var(--color-highlight);
+  color: #fff;
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-md);
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: 0;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.nav__link--cta:hover {
+  background-color: var(--color-highlight-hover);
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 .nav__toggle {
@@ -41,28 +70,36 @@
   display: block;
   width: 24px;
   height: 2px;
-  background-color: var(--color-text);
+  background-color: var(--color-text-light);
   border-radius: var(--radius-full);
   transition: transform var(--transition-base), opacity var(--transition-base);
 }
 
 @media (max-width: 768px) {
-  .nav__toggle { display: flex; }
+  .nav__toggle {
+    display: flex;
+  }
 
   .nav__list {
     display: none;
     position: absolute;
-    top: 64px;
+    top: 68px;
     left: 0;
     right: 0;
     flex-direction: column;
-    background: var(--color-bg);
-    border-bottom: 1px solid var(--color-border);
-    padding: var(--space-4) var(--container-pad);
+    align-items: flex-start;
+    background: var(--color-navy);
+    border-bottom: 1px solid var(--color-border-dark);
+    padding: var(--space-4) var(--container-pad) var(--space-6);
     gap: var(--space-4);
   }
 
   .nav__list[data-open="true"] {
     display: flex;
+  }
+
+  .nav__link {
+    font-size: var(--text-base);
+    color: var(--color-text-light);
   }
 }
