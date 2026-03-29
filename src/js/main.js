@@ -9,10 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ── Mobile nav toggle ──────────────────────────────────────────────── */
 function initMobileNav() {
   const hamburger = document.querySelector('.nav__hamburger');
-  const navLinks = document.querySelector('.nav__links');
-
+  const navLinks  = document.querySelector('.nav__links');
   if (!hamburger || !navLinks) return;
-
   hamburger.addEventListener('click', () => {
     const expanded = hamburger.getAttribute('aria-expanded') === 'true';
     hamburger.setAttribute('aria-expanded', String(!expanded));
@@ -24,11 +22,9 @@ function initMobileNav() {
 function initStickyHeader() {
   const header = document.querySelector('.site-header');
   if (!header) return;
-
   const onScroll = () => {
     header.classList.toggle('site-header--scrolled', window.scrollY > 10);
   };
-
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 }
@@ -39,7 +35,6 @@ function initFAQ() {
     btn.setAttribute('aria-expanded', 'false');
     const answer = btn.nextElementSibling;
     if (answer) answer.hidden = true;
-
     btn.addEventListener('click', () => {
       const expanded = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', String(!expanded));
@@ -53,17 +48,16 @@ function initFAQ() {
 /* ── Field notes topic filter ───────────────────────────────────────── */
 function initFieldNotesFilter() {
   const filterBtns = document.querySelectorAll('.filter-pill');
-  const posts = document.querySelectorAll('.post-card');
-
+  const posts      = document.querySelectorAll('.post-card');
   if (!filterBtns.length) return;
-
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('filter-pill--active'));
       btn.classList.add('filter-pill--active');
       const topic = btn.dataset.topic;
       posts.forEach(card => {
-        card.style.display = (topic === 'all' || card.dataset.topic === topic) ? '' : 'none';
+        card.style.display =
+          (topic === 'all' || card.dataset.topic === topic) ? '' : 'none';
       });
     });
   });
@@ -73,7 +67,6 @@ function initFieldNotesFilter() {
 function initScrollReveal() {
   const items = document.querySelectorAll('[data-reveal]');
   if (!items.length) return;
-
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -85,11 +78,10 @@ function initScrollReveal() {
     },
     { threshold: 0.12 }
   );
-
   items.forEach(el => observer.observe(el));
 }
 
-// Newsletter forms
+/* ── Newsletter forms ───────────────────────────────────────────────── */
 document.querySelectorAll('.newsletter-form').forEach(form => {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -101,12 +93,12 @@ document.querySelectorAll('.newsletter-form').forEach(form => {
   });
 });
 
-// Chatbot Widget
-const chatbotTrigger = document.getElementById('chatbot-trigger');
-const chatbotPanel = document.getElementById('chatbot-panel');
-const chatbotClose = document.getElementById('chatbot-close');
-const chatbotInput = document.getElementById('chatbot-input');
-const chatbotSend = document.getElementById('chatbot-send');
+/* ── Chatbot Widget ─────────────────────────────────────────────────── */
+const chatbotTrigger  = document.getElementById('chatbot-trigger');
+const chatbotPanel    = document.getElementById('chatbot-panel');
+const chatbotClose    = document.getElementById('chatbot-close');
+const chatbotInput    = document.getElementById('chatbot-input');
+const chatbotSend     = document.getElementById('chatbot-send');
 const chatbotMessages = document.getElementById('chatbot-messages');
 
 function addMessage(text, type) {
@@ -131,12 +123,13 @@ function getBotResponse(input) {
   if (q.includes('book') || q.includes('call') || q.includes('schedule') || q.includes('talk')) {
     return 'Ready to connect? Book a free 30-minute discovery call at <a href="/contact/" style="color:#028090">tieralto.com/contact</a> or call us at <a href="tel:16786995935" style="color:#028090">1-678-699-5935</a>.';
   }
-  if (q.includes('phone') || q.includes('number') || q.includes('contact')) {
+  if (q.includes('number') || q.includes('contact') || q.includes('email') || q.includes('reach')) {
     return 'You can reach us at <a href="tel:16786995935" style="color:#028090">1-678-699-5935</a> or <a href="mailto:hello@tieralto.com" style="color:#028090">hello@tieralto.com</a>.';
   }
   return 'That\'s a great question for a real conversation. Let\'s connect:<br><a href="tel:16786995935" style="color:#028090">1-678-699-5935</a> · <a href="/contact/" style="color:#028090">tieralto.com/contact</a>';
 }
 
+/* Toggle open/close on trigger click */
 chatbotTrigger?.addEventListener('click', () => {
   const isOpen = chatbotPanel.classList.contains('is-open');
   if (isOpen) {
@@ -146,6 +139,8 @@ chatbotTrigger?.addEventListener('click', () => {
     chatbotInput?.focus();
   }
 });
+
+/* Close button */
 chatbotClose?.addEventListener('click', () => {
   chatbotPanel.classList.remove('is-open');
 });
@@ -163,16 +158,19 @@ chatbotInput?.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') sendMessage();
 });
 
-// Exit Intent Popup
-(function() {
+/* ── Exit Intent Popup ──────────────────────────────────────────────── */
+(function () {
+  'use strict';
+
   const SESSION_KEY = 'ta-exit-shown';
   if (sessionStorage.getItem(SESSION_KEY)) return;
 
-  const overlay  = document.getElementById('ta-exit-overlay');
-  const closeBtn = document.getElementById('ta-exit-close');
-  const dismiss  = document.getElementById('ta-exit-dismiss');
-  const form     = document.getElementById('ta-exit-form');
-  const submitBtn = document.getElementById('ta-ep-submit');
+  const overlay    = document.getElementById('ta-exit-overlay');
+  const closeBtn   = document.getElementById('ta-exit-close');
+  const dismissBtn = document.getElementById('ta-exit-dismiss');
+  const form       = document.getElementById('ta-exit-form');
+  const submitBtn  = document.getElementById('ta-ep-submit');
+
   if (!overlay) return;
 
   function openPopup() {
@@ -187,38 +185,43 @@ chatbotInput?.addEventListener('keydown', (e) => {
     document.body.style.overflow = '';
   }
 
-  // Desktop only: fire when cursor moves toward top of browser
+  /* Desktop only: fires when cursor moves toward top of browser */
   const isMobile = /Mobi|Android/i.test(navigator.userAgent);
   if (!isMobile) {
-    document.addEventListener('mouseleave', (e) => {
+    document.addEventListener('mouseleave', function (e) {
       if (e.clientY < 10) openPopup();
     });
   }
 
-  // Close on overlay click, × button, dismiss link, Escape key
-  overlay.addEventListener('click', (e) => { if (e.target === overlay) closePopup(); });
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) closePopup();
+  });
   closeBtn?.addEventListener('click', closePopup);
-  dismiss?.addEventListener('click', closePopup);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePopup(); });
+  dismissBtn?.addEventListener('click', closePopup);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closePopup();
+  });
 
-  // Form submit — capture email, show success, close after 2.5s
-  form?.addEventListener('submit', async (e) => {
+  form?.addEventListener('submit', function (e) {
     e.preventDefault();
-    const email = document.getElementById('ta-ep-email')?.value.trim();
+    const emailInput = document.getElementById('ta-ep-email');
+    const email = emailInput?.value.trim();
     if (!email) return;
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Subscribing...';
-    try {
-      await fetch('/api/newsletter', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, source: 'Exit Intent Popup' }),
-      });
-    } catch(err) {
-      console.log('Newsletter API not yet wired:', err);
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Subscribing...';
     }
-    // Show success regardless of API state
-    form.innerHTML = '<p style="color:#028090; font-weight:600; font-size:15px;">✓ You\'re subscribed — field notes coming your way.</p>';
+    fetch('/api/newsletter', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, source: 'Exit Intent Popup' }),
+    }).catch(function () {});
+    if (form) {
+      form.innerHTML =
+        '<p style="color:#028090;font-weight:600;font-size:15px;padding:10px 0;">' +
+        '&#10003; You\'re subscribed — field notes coming your way.' +
+        '</p>';
+    }
     setTimeout(closePopup, 2500);
   });
 }());

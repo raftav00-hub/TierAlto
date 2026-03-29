@@ -171,16 +171,20 @@
   <script type="module" src="/src/js/main.js"></script>
   <script src="/src/js/conversionConfig.js"></script>
   <script src="/src/js/conversion.js"></script>
-
-  <!-- Exit Intent Popup -->
   <div id="ta-exit-overlay" role="dialog" aria-modal="true" aria-labelledby="ta-exit-headline">
     <div id="ta-exit-modal">
-      <button id="ta-exit-close" aria-label="Close">&times;</button>
-      <img src="/images/tieralto-icon.svg" alt="TierAlto" width="36">
-      <h2 id="ta-exit-headline">Before you go — not sure where to start?</h2>
-      <p>Get new field notes delivered when published. Real problems, real fixes — no marketing.</p>
+      <button id="ta-exit-close" aria-label="Close popup">&times;</button>
+      <img src="/images/tieralto-icon.svg" alt="TierAlto" width="36" height="36"/>
+      <h2 id="ta-exit-headline">Before you go — stay sharp.</h2>
+      <p>Get Field Notes delivered when published. Real problems, real fixes — no marketing, no product pitches.</p>
       <form id="ta-exit-form">
-        <input type="email" id="ta-ep-email" placeholder="Your email address" required/>
+        <input
+          type="email"
+          id="ta-ep-email"
+          placeholder="Your email address"
+          autocomplete="email"
+          required
+        />
         <button type="submit" id="ta-ep-submit">Get Field Notes</button>
       </form>
       <button id="ta-exit-dismiss">No thanks</button>
