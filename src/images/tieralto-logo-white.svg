@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 320" width="280" height="320">
+  <!--
+    TierAlto Logo — White Version
+    Use on: navy #1E2761, teal #028090, any dark background
+    All elements are white with opacity layering for the mountain tiers
+  -->
+
+  <!-- Mountain icon — white with opacity layers -->
+  <polygon points="140,10 265,195 15,195" fill="rgba(255,255,255,0.95)"/>
+  <path d="M15,195 Q50,152 85,168 Q115,182 140,174
+           Q165,166 195,160 Q230,153 265,195 Z" fill="rgba(255,255,255,0.60)"/>
+  <path d="M15,195 Q55,183 90,189 Q115,193 140,190
+           Q165,187 190,185 Q225,182 265,195 Z" fill="rgba(255,255,255,0.30)"/>
+  <rect x="15" y="188" width="250" height="16" rx="8" fill="rgba(255,255,255,0.30)"/>
+
+  <!-- White wordmark -->
+  <text x="140" y="278"
+    text-anchor="middle"
+    font-family="'Nunito', 'Poppins', 'DM Sans', 'Trebuchet MS', Arial, sans-serif"
+    font-weight="800"
+    font-size="62"
+    fill="#FFFFFF"
+    letter-spacing="-1">TierAlto</text>
+</svg>

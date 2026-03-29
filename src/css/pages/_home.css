@@ -16,6 +16,38 @@
   background-color: var(--color-bg-alt);
 }
 
+.section--navy {
+  background-color: var(--color-navy);
+}
+
+.section--white {
+  background-color: var(--color-white);
+}
+
+.section--light-gray {
+  background-color: var(--color-light-gray);
+}
+
+.section--light-teal {
+  background-color: var(--color-light-teal);
+}
+
+/* ── Deployment strip ──────────────────────────────────────────────────── */
+.deployment-strip__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.deployment-strip__copy {
+  font-size: var(--text-xl);
+  color: var(--color-text-body);
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
 .section__header {
   text-align: center;
   max-width: 660px;

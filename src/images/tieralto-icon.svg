@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!--
+    TierAlto Icon Only — Mountain Mark
+    Use for: favicon, app icon, social media profile
+    Works on both light and dark backgrounds (use white version on dark)
+  -->
+
+  <!-- Mountain triangle — light teal -->
+  <polygon points="50,5 95,78 5,78" fill="#3A90BC"/>
+
+  <!-- Mid layer wave — darker teal -->
+  <path d="M5,78 Q18,60 30,67 Q40,72 50,68
+           Q60,64 70,61 Q82,57 95,78 Z" fill="#1B6A9C"/>
+
+  <!-- Deep base — navy -->
+  <path d="M5,78 Q20,72 32,75 Q41,77 50,76
+           Q59,75 68,73 Q80,71 95,78 Z" fill="#022B47"/>
+
+  <!-- Rounded bottom pill -->
+  <rect x="5" y="74" width="90" height="10" rx="5" fill="#022B47"/>
+</svg>

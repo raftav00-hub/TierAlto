@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" width="220" height="52">
+  <!--
+    TierAlto Logo — Horizontal Lockup
+    Use for: navigation bar, email headers, horizontal spaces
+    White version — for use on navy/dark backgrounds
+  -->
+
+  <!-- Icon: small mountain mark -->
+  <polygon points="22,4 42,36 2,36" fill="rgba(255,255,255,0.95)"/>
+  <path d="M2,36 Q8,27 13,30 Q18,33 22,31
+           Q26,29 30,27 Q35,25 42,36 Z" fill="rgba(255,255,255,0.55)"/>
+  <path d="M2,36 Q10,32 15,34 Q19,35 22,34.5
+           Q25,34 29,33 Q35,32 42,36 Z" fill="rgba(255,255,255,0.28)"/>
+  <rect x="2" y="33" width="40" height="6" rx="3" fill="rgba(255,255,255,0.28)"/>
+
+  <!-- Wordmark -->
+  <text x="52" y="36"
+    font-family="'Nunito', 'Poppins', 'DM Sans', 'Trebuchet MS', Arial, sans-serif"
+    font-weight="800"
+    font-size="28"
+    fill="#FFFFFF"
+    letter-spacing="-0.5">TierAlto</text>
+</svg>

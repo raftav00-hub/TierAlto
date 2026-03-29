@@ -1,0 +1,90 @@
+/* Exit Intent Popup */
+#ta-exit-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99990;
+  background: rgba(0,0,0,0.55);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+#ta-exit-overlay.is-open {
+  display: flex;
+}
+#ta-exit-modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 36px;
+  max-width: 460px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+  animation: taSlideUp 0.25s ease;
+}
+@keyframes taSlideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+#ta-exit-modal img {
+  margin-bottom: 16px;
+}
+#ta-exit-headline {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1A1A2E;
+  margin-bottom: 10px;
+}
+#ta-exit-modal p {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+#ta-exit-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #6B7280;
+  cursor: pointer;
+  line-height: 1;
+}
+#ta-exit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+#ta-ep-email {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 0.5px solid #CCCCCC;
+  font-size: 15px;
+  background: #F5F5F5;
+  box-sizing: border-box;
+}
+#ta-ep-submit {
+  background: #028090;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+#ta-ep-submit:hover { background: #026d79; }
+#ta-exit-dismiss {
+  background: none;
+  border: none;
+  color: #6B7280;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+}

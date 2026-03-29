@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Page -- Contact
+   ========================================================================== */
+
+.contact-form-wrap {
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.contact-alt {
+  text-align: center;
+  padding-block: var(--space-12);
+}
+
+.contact-alt h3 {
+  color: var(--color-text-heading);
+  margin-bottom: var(--space-3);
+}
+
+.contact-alt a {
+  color: var(--color-teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-alt a:hover { color: var(--color-teal-dark); }
+
+.contact-phone {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-teal);
+  margin: 1rem 0 0.5rem;
+}
+.contact-phone:hover { border-bottom-color: #fff; }
+.contact-methods {
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+}

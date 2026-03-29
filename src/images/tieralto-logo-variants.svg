@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+
+  <!-- ============================================================
+       TIERALTO LOGO — SVG MASTER FILE
+       Colors extracted from logo.jpeg:
+         Light teal:  #3A90BC (mountain upper face)
+         Mid teal:    #1B6A9C (mountain mid layer)
+         Deep navy:   #022B47 (mountain base + wordmark)
+         Background:  #F0EDE4 (original cream) or transparent
+       ============================================================ -->
+
+  <!-- VARIANT 1: Full color on cream/light background -->
+  <rect x="0" y="0" width="280" height="480" rx="16" fill="#F0EDE4"/>
+
+  <!-- Mountain icon — centered at x=140 -->
+  <!-- Outer triangle (light teal — front/top face) -->
+  <polygon points="140,40 265,220 15,220" fill="#3A90BC"/>
+
+  <!-- Mid layer wave (darker teal) -->
+  <path d="M15,220 Q50,175 85,192 Q115,208 140,200 Q165,192 195,185 Q230,178 265,220 Z"
+        fill="#1B6A9C"/>
+
+  <!-- Deep base layer (navy) — foreground mountain mass -->
+  <path d="M15,220 Q55,208 90,214 Q115,218 140,215 Q165,212 190,210 Q225,207 265,220 Z"
+        fill="#022B47"/>
+
+  <!-- Rounded bottom pill of icon -->
+  <rect x="15" y="213" width="250" height="16" rx="8" fill="#022B47"/>
+
+  <!-- Wordmark -->
+  <text x="140" y="300"
+    text-anchor="middle"
+    font-family="'Nunito', 'Poppins', 'DM Sans', 'Trebuchet MS', Arial, sans-serif"
+    font-weight="800"
+    font-size="62"
+    fill="#022B47"
+    letter-spacing="-1">TierAlto</text>
+
+  <!-- Variant label -->
+  <text x="140" y="340" text-anchor="middle" font-family="Arial" font-size="11" fill="#999">Full color · light bg</text>
+
+
+  <!-- ============================================================ -->
+  <!-- VARIANT 2: White version for dark/navy backgrounds -->
+  <rect x="310" y="0" width="280" height="480" rx="16" fill="#1E2761"/>
+
+  <!-- Mountain — white/light version -->
+  <polygon points="450,40 575,220 325,220" fill="rgba(255,255,255,0.95)"/>
+  <path d="M325,220 Q360,175 395,192 Q425,208 450,200 Q475,192 505,185 Q540,178 575,220 Z"
+        fill="rgba(255,255,255,0.65)"/>
+  <path d="M325,220 Q365,208 400,214 Q425,218 450,215 Q475,212 500,210 Q535,207 575,220 Z"
+        fill="rgba(255,255,255,0.35)"/>
+  <rect x="325" y="213" width="250" height="16" rx="8" fill="rgba(255,255,255,0.35)"/>
+
+  <!-- White wordmark -->
+  <text x="450" y="300"
+    text-anchor="middle"
+    font-family="'Nunito', 'Poppins', 'DM Sans', 'Trebuchet MS', Arial, sans-serif"
+    font-weight="800"
+    font-size="62"
+    fill="#FFFFFF"
+    letter-spacing="-1">TierAlto</text>
+
+  <text x="450" y="340" text-anchor="middle" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.4)">White version · dark bg</text>
+
+
+  <!-- ============================================================ -->
+  <!-- VARIANT 3: Icon only — for favicon / app icon -->
+  <rect x="620" y="0" width="160" height="160" rx="20" fill="#F0EDE4"/>
+
+  <polygon points="700,20 780,135 620,135" fill="#3A90BC"/>
+  <path d="M620,135 Q645,112 665,121 Q683,130 700,126 Q717,122 733,117 Q755,111 780,135 Z"
+        fill="#1B6A9C"/>
+  <path d="M620,135 Q648,128 668,131 Q684,133 700,132 Q716,131 732,129 Q756,126 780,135 Z"
+        fill="#022B47"/>
+  <rect x="620" y="130" width="160" height="11" rx="5.5" fill="#022B47"/>
+
+  <text x="700" y="158" text-anchor="middle" font-family="Arial" font-size="10" fill="#999">Icon only · favicon</text>
+
+
+  <!-- ============================================================ -->
+  <!-- VARIANT 4: Horizontal lockup for nav bar use -->
+  <rect x="620" y="200" width="260" height="80" rx="10" fill="#1E2761"/>
+
+  <!-- Tiny mountain icon -->
+  <polygon points="648,215 672,248 624,248" fill="rgba(255,255,255,0.9)"/>
+  <path d="M624,248 Q632,238 640,242 Q648,246 656,244 Q664,242 672,248 Z" fill="rgba(255,255,255,0.5)"/>
+  <rect x="624" y="245" width="48" height="6" rx="3" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Nav wordmark -->
+  <text x="686" y="242"
+    font-family="'Nunito', 'Poppins', 'DM Sans', 'Trebuchet MS', Arial, sans-serif"
+    font-weight="800"
+    font-size="30"
+    fill="#FFFFFF"
+    letter-spacing="-0.5">TierAlto</text>
+
+  <text x="740" y="262" text-anchor="middle" font-family="Arial" font-size="10" fill="rgba(255,255,255,0.4)">Horizontal · nav bar</text>
+
+
+  <!-- ============================================================ -->
+  <!-- COLOR SWATCHES -->
+  <text x="0" y="460" font-family="Arial" font-size="13" font-weight="bold" fill="#333">Extracted colors:</text>
+  <rect x="0" y="468" width="40" height="20" rx="4" fill="#3A90BC"/>
+  <text x="46" y="483" font-family="Arial" font-size="11" fill="#555">#3A90BC — Light teal (mountain top)</text>
+
+  <rect x="0" y="492" width="40" height="20" rx="4" fill="#1B6A9C"/>
+  <text x="46" y="507" font-family="Arial" font-size="11" fill="#555">#1B6A9C — Mid teal (mountain mid)</text>
+
+  <rect x="300" y="468" width="40" height="20" rx="4" fill="#022B47"/>
+  <text x="346" y="483" font-family="Arial" font-size="11" fill="#555">#022B47 — Deep navy (base + wordmark)</text>
+
+  <rect x="300" y="492" width="40" height="20" rx="4" fill="#1E2761" stroke="#ccc" stroke-width="0.5"/>
+  <text x="346" y="507" font-family="Arial" font-size="11" fill="#555">#1E2761 — TierAlto brand navy (existing)</text>
+
+</svg>

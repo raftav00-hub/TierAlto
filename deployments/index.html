@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tell Us About Your Deployment | TierAlto</title>
+  <meta name="description" content="Working on a communications deployment? Tell us what you are dealing with. TierAlto reviews every submission and responds within one business day." />
+  <link rel="canonical" href="https://tieralto.com/deployments/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tieralto.com/deployments/" />
+  <meta property="og:title" content="Tell Us About Your Deployment | TierAlto" />
+  <meta property="og:description" content="Working on a deployment? Tell us what you are dealing with." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="/src/css/main.css" />
+  <link rel="icon" type="image/svg+xml" href="/images/tieralto-icon.svg">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="/" class="nav__brand">
+        <img src="/images/tieralto-icon.svg" alt="TierAlto" class="nav__logo" width="36" height="36">
+        <span class="nav__wordmark">TierAlto</span>
+      </a>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/field-notes/">Field Notes</a></li>
+        <li><a href="/deployments/">Deployments</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/contact/" class="btn btn--primary btn--sm">Book a Call</a></li>
+      </ul>
+      <a href="tel:16786995935" class="nav__phone">1-678-699-5935</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Tell Us About Your Deployment</h1>
+        <p>Whether you are planning a rollout, troubleshooting something in the field, or trying to build a better staging process &mdash; this form helps us understand your situation quickly. We review every submission personally and respond within one business day.</p>
+        <p style="margin-top:var(--space-4);">If your situation is time-sensitive, you are also welcome to book a discovery call directly at <a href="/contact/" style="color:var(--color-text-teal-on-dark);font-weight:600;">/contact/</a>.</p>
+      </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="section section--white">
+      <div class="container">
+        <div class="intake-form-wrap">
+          <form name="deployment-intake" data-netlify="true" method="POST" action="/deployments/">
+            <input type="hidden" name="form-name" value="deployment-intake" />
+
+            <!-- SECTION A -->
+            <div class="form-section-title">Section A &mdash; About You</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="company">Company <span aria-hidden="true">*</span></label>
+                <input type="text" id="company" name="company" required autocomplete="organization" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="role">Your Role <span aria-hidden="true">*</span></label>
+              <select id="role" name="role" required>
+                <option value="">Select your role</option>
+                <option value="distributor">Distributor / Staging Operation</option>
+                <option value="var">VAR / Reseller</option>
+                <option value="msp">MSP</option>
+                <option value="installer">Installer / Field Team</option>
+                <option value="it-manager">IT Manager / Director</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone (optional)</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" />
+              </div>
+            </div>
+
+            <!-- SECTION B -->
+            <div class="form-section-title form-section-gap">Section B &mdash; About Your Deployment</div>
+            <div class="form-group">
+              <label>Device Vendors (select all that apply)</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="vendors" value="poly" /> Poly</label>
+                <label><input type="checkbox" name="vendors" value="yealink" /> Yealink</label>
+                <label><input type="checkbox" name="vendors" value="grandstream" /> Grandstream</label>
+                <label><input type="checkbox" name="vendors" value="cisco" /> Cisco</label>
+                <label><input type="checkbox" name="vendors" value="avaya" /> Avaya</label>
+                <label><input type="checkbox" name="vendors" value="other" /> Other</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="platform">UC Platform</label>
+              <select id="platform" name="platform">
+                <option value="">Select platform</option>
+                <option value="ringcentral">RingCentral</option>
+                <option value="teams">Microsoft Teams Direct Routing</option>
+                <option value="zoom">Zoom Phone</option>
+                <option value="webex">Cisco Webex Calling</option>
+                <option value="broadworks">Broadworks-based service</option>
+                <option value="3cx">3CX</option>
+                <option value="freepbx">FreePBX / Asterisk</option>
+                <option value="other">Other / Not sure</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="device-count">Number of Devices</label>
+                <select id="device-count" name="device-count">
+                  <option value="">Select range</option>
+                  <option value="1-25">1 &ndash; 25</option>
+                  <option value="26-100">26 &ndash; 100</option>
+                  <option value="101-500">101 &ndash; 500</option>
+                  <option value="501-2000">501 &ndash; 2,000</option>
+                  <option value="2000+">2,000+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="stage">Where Are You In the Process?</label>
+                <select id="stage" name="stage">
+                  <option value="">Select stage</option>
+                  <option value="planning">Still planning / pre-order</option>
+                  <option value="staging">Devices ordered or in staging</option>
+                  <option value="deployment">Active deployment in progress</option>
+                  <option value="troubleshooting">Post-deployment troubleshooting</option>
+                  <option value="building">Building a new process or tool</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- SECTION C -->
+            <div class="form-section-title form-section-gap">Section C &mdash; Tell Us More</div>
+            <div class="form-group">
+              <label for="situation">Describe Your Situation</label>
+              <textarea id="situation" name="situation" rows="5" maxlength="500" placeholder="What are you working on? What is the problem you are trying to solve or the outcome you are trying to achieve? (500 characters max)"></textarea>
+            </div>
+            <div class="form-group">
+              <label>What are you hoping to get out of this? (select all that apply)</label>
+              <div class="checkbox-group outcome-checks">
+                <label><input type="checkbox" name="outcome" value="review" /> Have someone review my current setup</label>
+                <label><input type="checkbox" name="outcome" value="build" /> Get help building a provisioning workflow or application</label>
+                <label><input type="checkbox" name="outcome" value="troubleshoot" /> Troubleshoot an active problem</label>
+                <label><input type="checkbox" name="outcome" value="advisory" /> Ongoing advisory or technical support</label>
+                <label><input type="checkbox" name="outcome" value="not-sure" /> Not sure yet &mdash; just want to talk through it</label>
+              </div>
+            </div>
+
+            <div style="text-align:center;margin-top:var(--space-10);">
+              <button type="submit" class="btn btn--primary btn--lg">Submit Your Deployment</button>
+              <p class="form-submit-note">We review every submission personally. You will hear from us within one business day.</p>
+            </div>
+          </form>
+
+          <div class="privacy-note">
+            The information you submit is used only to respond to your inquiry. We do not sell or share your contact information. See our <a href="/privacy-policy/">Privacy Policy</a> for details.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="/images/tieralto-logo-white.svg" alt="TierAlto" class="footer__logo" width="120">
+          <span class="footer__tagline">Where Expertise Meets Accountability.</span>
+          <a href="mailto:hello@tieralto.com">hello@tieralto.com</a>
+          <a href="tel:16786995935" class="footer__phone">1-678-699-5935</a>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="/services/">Services</a>
+          <a href="/field-notes/">Field Notes</a>
+          <a href="/deployments/">Deployments</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+        <div class="footer__newsletter">
+          <p class="footer__newsletter-title">Stay Sharp.</p>
+          <p class="footer__newsletter-sub">Get Field Notes delivered when they publish.</p>
+          <form class="newsletter-form" action="#" method="post">
+            <input type="hidden" name="form-name" value="newsletter-footer">
+            <div class="newsletter-form__row">
+              <input type="email" name="email" placeholder="Email address" required class="newsletter-form__input newsletter-form__input--dark">
+              <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
+            </div>
+            <p class="newsletter-form__success" hidden>Subscribed!</p>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-of-service/">Terms of Service</a>
+        <span>&copy; 2026 TierAlto LLC. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot Widget -->
+  <div class="chatbot" id="chatbot">
+    <button class="chatbot__trigger" id="chatbot-trigger" aria-label="Open chat">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 4h20a2 2 0 012 2v14a2 2 0 01-2 2H8l-6 4V6a2 2 0 012-2z" stroke="white" stroke-width="2" stroke-linejoin="round" fill="none"/>
+        <circle cx="9" cy="12" r="1.5" fill="white"/>
+        <circle cx="14" cy="12" r="1.5" fill="white"/>
+        <circle cx="19" cy="12" r="1.5" fill="white"/>
+      </svg>
+    </button>
+    <div class="chatbot__panel" id="chatbot-panel">
+      <div class="chatbot__header">
+        <img src="/images/tieralto-logo-horizontal.svg" alt="TierAlto" class="chatbot__logo" width="120">
+        <span class="chatbot__subtitle">Chat with us</span>
+        <button class="chatbot__close" id="chatbot-close" aria-label="Close chat">&times;</button>
+      </div>
+      <div class="chatbot__messages" id="chatbot-messages">
+        <div class="chatbot__message chatbot__message--bot">
+          <p>Hi &mdash; I&rsquo;m TierAlto&rsquo;s assistant. I can answer questions about our services, provisioning, or help you book a discovery call. What are you working on?</p>
+        </div>
+      </div>
+      <div class="chatbot__input-row">
+        <input type="text" class="chatbot__input" id="chatbot-input" placeholder="Type a message&hellip;" autocomplete="off">
+        <button class="chatbot__send" id="chatbot-send">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M16 9L2 2l3 7-3 7 14-7z" fill="#028090"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+  <script src="/src/js/conversionConfig.js"></script>
+  <script src="/src/js/conversion.js"></script>
+
+  <!-- Exit Intent Popup -->
+  <div id="ta-exit-overlay" role="dialog" aria-modal="true" aria-labelledby="ta-exit-headline">
+    <div id="ta-exit-modal">
+      <button id="ta-exit-close" aria-label="Close">&times;</button>
+      <img src="/images/tieralto-icon.svg" alt="TierAlto" width="36">
+      <h2 id="ta-exit-headline">Before you go — not sure where to start?</h2>
+      <p>Get new field notes delivered when published. Real problems, real fixes — no marketing.</p>
+      <form id="ta-exit-form">
+        <input type="email" id="ta-ep-email" placeholder="Your email address" required/>
+        <button type="submit" id="ta-ep-submit">Get Field Notes</button>
+      </form>
+      <button id="ta-exit-dismiss">No thanks</button>
+    </div>
+  </div>
+</body>
+</html>

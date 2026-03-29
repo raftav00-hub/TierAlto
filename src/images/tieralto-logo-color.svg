@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 320" width="280" height="320">
+  <!--
+    TierAlto Logo — Full Color Version
+    Use on: white, light gray, cream backgrounds
+    Colors:
+      Mountain light teal: #3A90BC
+      Mountain mid teal:   #1B6A9C
+      Mountain base navy:  #022B47
+      Wordmark:            #022B47
+  -->
+
+  <!-- Mountain icon -->
+  <polygon points="140,10 265,195 15,195" fill="#3A90BC"/>
+  <path d="M15,195 Q50,152 85,168 Q115,182 140,174
+           Q165,166 195,160 Q230,153 265,195 Z" fill="#1B6A9C"/>
+  <path d="M15,195 Q55,183 90,189 Q115,193 140,190
+           Q165,187 190,185 Q225,182 265,195 Z" fill="#022B47"/>
+  <rect x="15" y="188" width="250" height="16" rx="8" fill="#022B47"/>
+
+  <!-- TierAlto wordmark -->
+  <text x="140" y="278"
+    text-anchor="middle"
+    font-family="'Nunito', 'Poppins', 'DM Sans', 'Trebuchet MS', Arial, sans-serif"
+    font-weight="800"
+    font-size="62"
+    fill="#022B47"
+    letter-spacing="-1">TierAlto</text>
+</svg>

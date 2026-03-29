@@ -1,0 +1,32 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/images/*"
+  to = "/src/images/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/services"
+  to = "/services/"
+  status = 301
+
+[[redirects]]
+  from = "/field-notes"
+  to = "/field-notes/"
+  status = 301
+
+[[redirects]]
+  from = "/deployments"
+  to = "/deployments/"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact/"
+  status = 301

@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Page -- About
+   ========================================================================== */
+
+.about-content {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.about-content p {
+  font-size: var(--text-lg);
+  line-height: 1.85;
+  color: var(--color-text-body);
+  margin-bottom: var(--space-6);
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+}
+
+.expertise-tag {
+  padding: var(--space-2) var(--space-4);
+  border: 2px solid var(--color-teal);
+  border-radius: var(--border-radius-full);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-teal);
+  background: transparent;
+}
+
+.philosophy-content {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.philosophy-content p {
+  font-size: var(--text-lg);
+  line-height: 1.85;
+  color: var(--color-text-body);
+  margin-bottom: var(--space-6);
+}
+
+.content-narrow {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.content-narrow p {
+  font-size: var(--text-lg);
+  line-height: 1.85;
+  color: var(--color-text-body);
+  margin-bottom: var(--space-6);
+}

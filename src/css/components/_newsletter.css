@@ -1,0 +1,43 @@
+/* Newsletter Widget */
+.newsletter-strip__inner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.newsletter-strip__text h2 {
+  color: #fff;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.newsletter-strip__text p {
+  color: rgba(255,255,255,0.8);
+}
+.newsletter-form__row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.newsletter-form__input {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: transparent;
+  color: #fff;
+}
+.newsletter-form__input::placeholder { color: rgba(255,255,255,0.5); }
+.newsletter-form__input--dark {
+  background: rgba(255,255,255,0.08);
+}
+.newsletter-form__success {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--color-text-teal-on-dark);
+}
+@media (max-width: 768px) {
+  .newsletter-strip__inner { flex-direction: column; align-items: flex-start; }
+}

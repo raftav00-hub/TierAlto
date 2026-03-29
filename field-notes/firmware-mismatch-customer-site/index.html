@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Firmware Problem That Only Shows Up at the Customer Site | TierAlto Field Notes</title>
+  <meta name="description" content="Why phones work perfectly in the lab but fail at the customer site — and how firmware mismatch is almost always the cause." />
+  <link rel="canonical" href="https://tieralto.com/field-notes/firmware-mismatch-customer-site/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://tieralto.com/field-notes/firmware-mismatch-customer-site/" />
+  <meta property="og:title" content="The Firmware Problem That Only Shows Up at the Customer Site | TierAlto Field Notes" />
+  <meta property="og:description" content="Why phones work in the lab but fail in the field. Firmware mismatch is almost always the cause." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="/src/css/main.css" />
+  <link rel="icon" type="image/svg+xml" href="/images/tieralto-icon.svg">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="/" class="nav__brand">
+        <img src="/images/tieralto-icon.svg" alt="TierAlto" class="nav__logo" width="36" height="36">
+        <span class="nav__wordmark">TierAlto</span>
+      </a>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/field-notes/">Field Notes</a></li>
+        <li><a href="/deployments/">Deployments</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/contact/" class="btn btn--primary btn--sm">Book a Call</a></li>
+      </ul>
+      <a href="tel:16786995935" class="nav__phone">1-678-699-5935</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-header">
+      <div class="container">
+        <span class="post-topic-pill">Pre-Shipment</span>
+        <h1>The firmware problem that only shows up at the customer site</h1>
+        <p class="post-meta">3 min read</p>
+        <div class="post-byline">
+          <img src="/images/tieralto-icon.svg" alt="TierAlto icon" width="20" height="20">
+          <span>TierAlto</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="post-content">
+          <p class="post-summary">Devices that test cleanly in the warehouse can fail at the customer site for one reason that most staging operations do not check: the customer&rsquo;s provisioning server auto-upgrades firmware on registration, and that upgrade breaks the configuration.</p>
+
+          <h2>The Problem</h2>
+          <p>You stage a batch of phones. You test them. Everything works. The devices ship. The installer plugs them in at the customer site. Half of them go into a boot loop or register without audio or lose their configuration entirely.</p>
+          <p>What happened? The devices registered with the customer&rsquo;s provisioning server, which pushed a firmware update automatically. The update changed something &mdash; a parameter name, a codec negotiation behavior, a configuration file path &mdash; and the configuration you loaded at the warehouse no longer applies correctly.</p>
+
+          <h2>Why It Happens</h2>
+          <p>Most enterprise and carrier provisioning platforms include an auto-firmware-update policy. When a device registers for the first time, the server checks whether the firmware version matches the required version and updates it if not.</p>
+          <p>This is fine in theory. In practice, it means:</p>
+          <ul>
+            <li>The firmware you staged in the warehouse may not be the firmware that runs at the customer site</li>
+            <li>The configuration you applied may have been validated against the wrong firmware version</li>
+            <li>The auto-update happens silently &mdash; the device does not tell you why it is rebooting or what changed</li>
+          </ul>
+          <p>This failure mode is especially common when staging operations have not received explicit firmware version requirements from the customer or reseller, or when they assume the latest firmware is always correct.</p>
+
+          <h2>The Fix</h2>
+          <p>Three things prevent this problem:</p>
+          <ul>
+            <li><strong>Get the firmware requirement in writing.</strong> Before staging a single device, confirm the exact firmware version required by the destination platform. Not the latest version &mdash; the required version. These are often different.</li>
+            <li><strong>Stage and validate against that specific firmware.</strong> Load the required version, apply the configuration, and validate. Do not let the device upgrade after staging.</li>
+            <li><strong>Coordinate with the provisioning server operator.</strong> If the server auto-upgrades, the staging operation needs to know what the target firmware is after that upgrade, and the configuration needs to be validated against that version, not the pre-upgrade version.</li>
+          </ul>
+
+          <h2>What This Tells You</h2>
+          <p>Firmware compatibility is not a detail. It is the foundation that everything else sits on. A configuration that is perfect for firmware 7.1.2 may fail silently on firmware 7.2.0 because a parameter was deprecated, a default value changed, or a codec behavior was updated.</p>
+          <p>The staging operations that have eliminated this class of failure are the ones that have built firmware version requirements into their intake process &mdash; not as an afterthought, but as a blocking requirement before a device gets staged.</p>
+
+          <div class="post-cta">
+            <h3>Dealing with field failures after pre-shipment staging?</h3>
+            <p>TierAlto helps staging operations build intake processes that catch firmware compatibility issues before devices leave the warehouse. Start with a free discovery call.</p>
+            <a href="/contact/" class="btn btn--primary">Book a Discovery Call</a>
+          </div>
+
+          <div class="related-posts">
+            <h3>Related Field Notes</h3>
+            <ul class="related-posts__list">
+              <li><a href="/field-notes/distributor-failure-rate/">Why your distributor&rsquo;s failure rate is not their fault &mdash; and how to fix it</a></li>
+              <li><a href="/field-notes/sip-registration-failure-causes/">Three reasons a phone fails to register after deployment &mdash; and none of them are the phone</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="/images/tieralto-logo-white.svg" alt="TierAlto" class="footer__logo" width="120">
+          <span class="footer__tagline">Where Expertise Meets Accountability.</span>
+          <a href="mailto:hello@tieralto.com">hello@tieralto.com</a>
+          <a href="tel:16786995935" class="footer__phone">1-678-699-5935</a>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="/services/">Services</a>
+          <a href="/field-notes/">Field Notes</a>
+          <a href="/deployments/">Deployments</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+        <div class="footer__newsletter">
+          <p class="footer__newsletter-title">Stay Sharp.</p>
+          <p class="footer__newsletter-sub">Get Field Notes delivered when they publish.</p>
+          <form class="newsletter-form" action="#" method="post">
+            <input type="hidden" name="form-name" value="newsletter-footer">
+            <div class="newsletter-form__row">
+              <input type="email" name="email" placeholder="Email address" required class="newsletter-form__input newsletter-form__input--dark">
+              <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
+            </div>
+            <p class="newsletter-form__success" hidden>Subscribed!</p>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-of-service/">Terms of Service</a>
+        <span>&copy; 2026 TierAlto LLC. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot Widget -->
+  <div class="chatbot" id="chatbot">
+    <button class="chatbot__trigger" id="chatbot-trigger" aria-label="Open chat">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 4h20a2 2 0 012 2v14a2 2 0 01-2 2H8l-6 4V6a2 2 0 012-2z" stroke="white" stroke-width="2" stroke-linejoin="round" fill="none"/>
+        <circle cx="9" cy="12" r="1.5" fill="white"/>
+        <circle cx="14" cy="12" r="1.5" fill="white"/>
+        <circle cx="19" cy="12" r="1.5" fill="white"/>
+      </svg>
+    </button>
+    <div class="chatbot__panel" id="chatbot-panel">
+      <div class="chatbot__header">
+        <img src="/images/tieralto-logo-horizontal.svg" alt="TierAlto" class="chatbot__logo" width="120">
+        <span class="chatbot__subtitle">Chat with us</span>
+        <button class="chatbot__close" id="chatbot-close" aria-label="Close chat">&times;</button>
+      </div>
+      <div class="chatbot__messages" id="chatbot-messages">
+        <div class="chatbot__message chatbot__message--bot">
+          <p>Hi &mdash; I&rsquo;m TierAlto&rsquo;s assistant. I can answer questions about our services, provisioning, or help you book a discovery call. What are you working on?</p>
+        </div>
+      </div>
+      <div class="chatbot__input-row">
+        <input type="text" class="chatbot__input" id="chatbot-input" placeholder="Type a message&hellip;" autocomplete="off">
+        <button class="chatbot__send" id="chatbot-send">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M16 9L2 2l3 7-3 7 14-7z" fill="#028090"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+  <script src="/src/js/conversionConfig.js"></script>
+  <script src="/src/js/conversion.js"></script>
+
+  <!-- Exit Intent Popup -->
+  <div id="ta-exit-overlay" role="dialog" aria-modal="true" aria-labelledby="ta-exit-headline">
+    <div id="ta-exit-modal">
+      <button id="ta-exit-close" aria-label="Close">&times;</button>
+      <img src="/images/tieralto-icon.svg" alt="TierAlto" width="36">
+      <h2 id="ta-exit-headline">Before you go — not sure where to start?</h2>
+      <p>Get new field notes delivered when published. Real problems, real fixes — no marketing.</p>
+      <form id="ta-exit-form">
+        <input type="email" id="ta-ep-email" placeholder="Your email address" required/>
+        <button type="submit" id="ta-ep-submit">Get Field Notes</button>
+      </form>
+      <button id="ta-exit-dismiss">No thanks</button>
+    </div>
+  </div>
+</body>
+</html>

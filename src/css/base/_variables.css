@@ -1,49 +1,45 @@
 /* ==========================================================================
-   Design Tokens — all custom properties
+   Design Tokens — All CSS Custom Properties
    ========================================================================== */
 
 :root {
-  /* Brand Colors — matched to logo */
-  --color-navy:            #1B3A5C;   /* Deep navy — headers, dark sections */
-  --color-navy-mid:        #152e4a;   /* Slightly deeper — credibility bar, footer */
-  --color-navy-light:      #2E7BAF;   /* Mid blue — borders & accents on dark bg */
-  --color-blue:            #4A9CC7;   /* Light blue — CTAs, highlights */
-  --color-blue-hover:      #3d8ab5;   /* Light blue hover */
+  /* ── Brand Colors ────────────────────────────────────────────────────── */
+  --color-navy:              #1E2761;
+  --color-teal:              #028090;
+  --color-teal-dark:         #026d79;
+  --color-navy-dark:         #162255;
+  --color-white:             #FFFFFF;
+  --color-light-teal:        #E6F5F7;
+  --color-light-gray:        #F5F5F5;
+  --color-text-heading:      #1A1A2E;
+  --color-text-body:         #374151;
+  --color-text-muted:        #6B7280;
+  --color-text-teal-on-dark: #7EC8D8;
+  --color-border-default:    #CCCCCC;
+  --color-border-card:       #E2E8F0;
+  --color-border-teal:       #028090;
+  --color-success:           #028090;
+  --color-warning:           #EF9F27;
+  --color-error:             #D93025;
 
-  /* Semantic aliases */
-  --color-primary:         var(--color-navy);
-  --color-secondary:       var(--color-navy-mid);
-  --color-accent:          var(--color-navy-light);
-  --color-highlight:       var(--color-blue);
-  --color-highlight-hover: var(--color-blue-hover);
+  /* ── Typography ──────────────────────────────────────────────────────── */
+  --font-display: 'Inter', 'Arial Black', sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-mono:    'Courier New', monospace;
 
-  /* Text */
-  --color-text:            #1a202c;
-  --color-text-muted:      #4a5568;
-  --color-text-light:      #e2e8f0;
-  --color-text-light-muted: rgb(226 232 240 / 0.68);
-
-  /* Backgrounds */
-  --color-bg:              #ffffff;
-  --color-bg-alt:          #F0EDE8;   /* Warm cream — matches logo background */
-  --color-border:          #dde3ea;
-  --color-border-dark:     rgb(46 123 175 / 0.22);
-
-  /* Typography */
-  --font-sans: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "Fira Code", "Cascadia Code", monospace;
+  /* ── Font Sizes ──────────────────────────────────────────────────────── */
   --text-xs:   0.75rem;
   --text-sm:   0.875rem;
   --text-base: 1rem;
   --text-lg:   1.125rem;
   --text-xl:   1.25rem;
   --text-2xl:  1.5rem;
-  --text-3xl:  1.875rem;
-  --text-4xl:  2.25rem;
+  --text-3xl:  2rem;
+  --text-4xl:  2.5rem;
   --text-5xl:  3rem;
-  --text-6xl:  3.75rem;
+  --text-6xl:  4rem;
 
-  /* Spacing */
+  /* ── Spacing ─────────────────────────────────────────────────────────── */
   --space-1:  0.25rem;
   --space-2:  0.5rem;
   --space-3:  0.75rem;
@@ -58,25 +54,51 @@
   --space-24: 6rem;
   --space-32: 8rem;
 
-  /* Layout */
-  --container-max: 1200px;
-  --container-pad: var(--space-6);
+  /* ── Layout ──────────────────────────────────────────────────────────── */
+  --container-max: 1280px;
+  --container-pad: 1.5rem;
 
-  /* Border radius */
-  --radius-sm:   0.25rem;
-  --radius-md:   0.5rem;
-  --radius-lg:   1rem;
-  --radius-xl:   1.5rem;
-  --radius-full: 9999px;
+  /* ── Border Radius ───────────────────────────────────────────────────── */
+  --border-radius-sm:   6px;
+  --border-radius-md:   8px;
+  --border-radius-lg:   12px;
+  --border-radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px rgb(0 0 0 / 0.07);
-  --shadow-lg: 0 10px 25px rgb(0 0 0 / 0.12);
-  --shadow-xl: 0 20px 40px rgb(0 0 0 / 0.15);
+  /* ── Shadows ─────────────────────────────────────────────────────────── */
+  --shadow-card: 0 2px 12px rgba(0,0,0,0.08);
+  --shadow-md:   0 4px 16px rgba(0,0,0,0.12);
+  --shadow-lg:   0 8px 32px rgba(0,0,0,0.16);
+  --shadow-xl:   0 20px 48px rgba(0,0,0,0.18);
 
-  /* Transitions */
+  /* ── Transitions ─────────────────────────────────────────────────────── */
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 400ms ease;
+
+  /* ── Aliases for reset.css and legacy partials ───────────────────────── */
+  --font-sans:             var(--font-body);
+  --color-text:            var(--color-text-body);
+  --color-bg:              var(--color-white);
+  --color-highlight:       var(--color-teal);
+  --color-highlight-hover: var(--color-teal-dark);
+  --radius-sm:             var(--border-radius-sm);
+  --radius-md:             var(--border-radius-md);
+  --radius-lg:             var(--border-radius-lg);
+  --radius-xl:             16px;
+  --radius-full:           var(--border-radius-full);
+
+  /* ── Legacy color aliases used by older partials ─────────────────────── */
+  --color-primary:          var(--color-navy);
+  --color-secondary:        var(--color-navy-dark);
+  --color-accent:           var(--color-teal);
+  --color-navy-mid:         var(--color-navy-dark);
+  --color-navy-light:       #2E5B8A;
+  --color-blue:             var(--color-teal);
+  --color-blue-hover:       var(--color-teal-dark);
+  --color-text-light:       #E2E8F0;
+  --color-text-light-muted: rgba(226,232,240,0.75);
+  --color-bg-alt:           var(--color-light-gray);
+  --color-border:           var(--color-border-card);
+  --color-border-dark:      rgba(255,255,255,0.12);
+  --shadow-sm:              0 1px 3px rgba(0,0,0,0.06);
 }

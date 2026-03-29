@@ -32,39 +32,53 @@
   transform: translateY(0);
 }
 
-/* Primary — light blue */
+/* Primary — teal */
 .btn--primary {
-  background-color: var(--color-highlight);
+  background-color: var(--color-teal);
   color: #fff;
+  border-color: var(--color-teal);
 }
 
 .btn--primary:hover {
-  background-color: var(--color-highlight-hover);
-  box-shadow: 0 6px 20px rgb(74 156 199 / 0.4);
+  background-color: var(--color-teal-dark);
+  border-color: var(--color-teal-dark);
+  box-shadow: 0 6px 20px rgba(2,128,144,0.35);
 }
 
-/* Secondary — navy outline */
+/* Secondary — navy */
 .btn--secondary {
-  background-color: transparent;
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+  background-color: var(--color-navy);
+  color: #fff;
+  border-color: var(--color-navy);
 }
 
 .btn--secondary:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-navy-dark);
+  border-color: var(--color-navy-dark);
+}
+
+/* Outline — teal outline */
+.btn--outline {
+  background-color: transparent;
+  border-color: var(--color-teal);
+  color: var(--color-teal);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-teal);
   color: #fff;
 }
 
 /* Ghost — white outline on dark bg */
 .btn--ghost {
   background-color: transparent;
-  border-color: rgb(255 255 255 / 0.35);
+  border-color: rgba(255,255,255,0.35);
   color: #fff;
 }
 
 .btn--ghost:hover {
-  background-color: rgb(255 255 255 / 0.08);
-  border-color: rgb(255 255 255 / 0.65);
+  background-color: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.65);
 }
 
 /* Sizes */
