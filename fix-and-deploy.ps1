@@ -378,7 +378,7 @@ function getBotResponse(input) {
   if (q.includes('book') || q.includes('call') || q.includes('schedule') || q.includes('talk'))
     return 'Book a free 30-minute discovery call at <a href="/contact/" style="color:#028090">tieralto.com/contact</a> or call <a href="tel:16786995935" style="color:#028090">1-678-699-5935</a>.';
   if (q.includes('number') || q.includes('contact') || q.includes('email') || q.includes('reach'))
-    return 'Reach us at <a href="tel:16786995935" style="color:#028090">1-678-699-5935</a> or <a href="mailto:hello@tieralto.com" style="color:#028090">hello@tieralto.com</a>.';
+    return 'Reach us at <a href="tel:16786995935" style="color:#028090">1-678-699-5935</a> or <a href="mailto:info@tieralto.com" style="color:#028090">info@tieralto.com</a>.';
   return 'Great question for a real conversation. Let\'s connect:<br><a href="tel:16786995935" style="color:#028090">1-678-699-5935</a> · <a href="/contact/" style="color:#028090">tieralto.com/contact</a>';
 }
 

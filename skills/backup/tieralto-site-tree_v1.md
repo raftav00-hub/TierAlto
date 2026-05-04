@@ -310,14 +310,14 @@ tieralto.com/
 │   │   └── Note: "We respond to every inquiry within 1 business day."
 │   │
 │   └── 🟦 SECTION 3 — Alt Contact
-│       └── "Prefer email? Reach us directly at: hello@tieralto.com"
+│       └── "Prefer email? Reach us directly at: info@tieralto.com"
 │
 │
 └── 🔻 FOOTER (Global — appears on all pages)
     ├── Column 1 — Brand:
     │   ├── TIERALTO wordmark
     │   ├── Tagline: "Where Expertise Meets Accountability."
-    │   └── Email: hello@tieralto.com
+    │   └── Email: info@tieralto.com
     ├── Column 2 — Navigation:
     │   ├── Services ............. /services
     │   ├── Field Notes .......... /field-notes
@@ -428,7 +428,7 @@ LEGAL (footer only)
 BUSINESS INFO
 ├── Name ........................... TierAlto LLC
 ├── Website ........................ https://tieralto.com
-├── Email .......................... hello@tieralto.com
+├── Email .......................... info@tieralto.com
 ├── Tagline ........................ "Where Expertise Meets Accountability."
 └── Discovery Call ................. Free, 30 minutes, phone / Zoom / Teams
 

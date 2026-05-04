@@ -66,7 +66,7 @@ BACKGROUNDS
   Light gray:  #F5F5F5
 
 PHONE:         1-678-699-5935
-EMAIL:         hello@tieralto.com
+EMAIL:         info@tieralto.com
 CONTACT PAGE:  /contact
 ```
 
@@ -165,7 +165,7 @@ const conversionConfig = {
       {
         icon: "email",
         label: "Email us",
-        link: "mailto:hello@tieralto.com",
+        link: "mailto:info@tieralto.com",
         color: "#1E2761",
       },
       {

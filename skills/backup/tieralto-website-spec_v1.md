@@ -31,7 +31,7 @@
 - **Company:** TierAlto LLC
 - **Tagline:** "Where Expertise Meets Accountability."
 - **Domain:** tieralto.com
-- **Email:** hello@tieralto.com
+- **Email:** info@tieralto.com
 - **Positioning:** Vendor-neutral technology consulting for channel partners, distributors,
   and mid-market companies in voice, VoIP, unified communications, and AI automation.
 
@@ -179,7 +179,7 @@ tieralto.com/
 TIERALTO
 Where Expertise Meets Accountability.
 
-hello@tieralto.com
+info@tieralto.com
 ```
 
 #### Footer — Column 2: Navigation
@@ -1301,7 +1301,7 @@ NOTE: "We respond to every inquiry within 1 business day."
 
 **Content:**
 ```
-Prefer email? Reach us directly at: hello@tieralto.com
+Prefer email? Reach us directly at: info@tieralto.com
 ```
 
 Small text, centered, muted color, below form.
@@ -1520,7 +1520,7 @@ The following must NOT appear anywhere on the website:
 
 4. **Forms need real handlers.** Both the contact form and deployment intake
    form need a form handling service. Formspree is the simplest option with
-   no backend. Configure with the hello@tieralto.com address.
+   no backend. Configure with the info@tieralto.com address.
 
 5. **Calendly or booking link TBC.** All "Book a Discovery Call" CTAs should
    link to `/contact` until a Calendly link is provided. Then either embed

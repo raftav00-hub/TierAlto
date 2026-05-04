@@ -101,7 +101,7 @@ BACKGROUNDS
   White:         #FFFFFF
 
 PHONE:           1-678-699-5935
-EMAIL:           hello@tieralto.com
+EMAIL:           info@tieralto.com
 TAGLINE:         "Where Expertise Meets Accountability."
 
 LOGO FILES (in D:\projects\TierAlto\src\images\)
@@ -697,7 +697,7 @@ export default function ThankYou() {
               Call 1-678-699-5935
             </a>
 
-            <a href="mailto:hello@tieralto.com" style={{
+            <a href="mailto:info@tieralto.com" style={{
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               gap: '8px', padding: '12px 20px',
               background: 'transparent', color: '#028090',
@@ -711,7 +711,7 @@ export default function ThankYou() {
                 <path d="M1 6l7 4 7-4"
                   stroke="currentColor" strokeWidth="1.5"/>
               </svg>
-              hello@tieralto.com
+              info@tieralto.com
             </a>
           </div>
 
@@ -1045,7 +1045,7 @@ const SOCIAL_ICONS = {
 
 ### Placement 1 — Footer Column 1 (below email address)
 
-Add after `hello@tieralto.com` in footer Column 1:
+Add after `info@tieralto.com` in footer Column 1:
 
 ```html
 <div class="ta-social-links" style="display:flex; gap:14px; margin-top:16px;">
@@ -1238,7 +1238,7 @@ already exists. If found — skip. Never add the same component twice.
 - [ ] /thank-you renders correctly after form submit
 - [ ] TierAlto logo (color version) displays on success page
 - [ ] Phone link 1-678-699-5935 is tap-to-call
-- [ ] Email link hello@tieralto.com is clickable
+- [ ] Email link info@tieralto.com is clickable
 - [ ] Back link returns to homepage
 
 **CTAs**

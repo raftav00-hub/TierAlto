@@ -37,7 +37,7 @@ const conversionConfig = {
     expandable: true,
     contacts: [
       { icon: "phone",    label: "Call us",    link: "tel:16786995935",           color: "#028090" },
-      { icon: "email",    label: "Email us",   link: "mailto:hello@tieralto.com", color: "#1E2761" },
+      { icon: "email",    label: "Email us",   link: "mailto:info@tieralto.com", color: "#1E2761" },
       { icon: "calendar", label: "Book a call", link: "/contact/",                color: "#028090" },
     ],
   },

@@ -33,7 +33,7 @@
 - **Tagline:** "Where Expertise Meets Accountability."
 - **Domain:** tieralto.com
 - **Phone:** 1-678-699-5935
-- **Email:** hello@tieralto.com
+- **Email:** info@tieralto.com
 - **Positioning:** Vendor-neutral technology consulting firm built by engineers
   with decades of experience inside the voice and unified communications industry.
   Serving channel partners, distributors, and mid-market companies.
@@ -167,7 +167,7 @@ TIERALTO
 Where Expertise Meets Accountability.
 
 1-678-699-5935  (tap-to-call)
-hello@tieralto.com
+info@tieralto.com
 ```
 
 **Column 2 — Navigation:**
@@ -1174,7 +1174,7 @@ NOTE:   "We respond to every inquiry within 1 business day."
 ### Section 3 — Alternative Contact
 
 ```
-Prefer email?  hello@tieralto.com
+Prefer email?  info@tieralto.com
 Or call:       1-678-699-5935
 ```
 
@@ -1518,7 +1518,7 @@ All pages Open Graph:
    No CMS needed at launch. Structure for easy post additions.
 
 7. Both forms need real handlers. Formspree recommended.
-   Configure to deliver to hello@tieralto.com.
+   Configure to deliver to info@tieralto.com.
 
 8. All booking CTAs link to /contact until Calendly is provided.
 

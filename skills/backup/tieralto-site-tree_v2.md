@@ -200,7 +200,7 @@ tieralto.com/
 │   │   └── Fields: Name · Email · Company · Phone · What are you working on? · How did you hear?
 │   │
 │   └── 🟦 SECTION 3 — Alt Contact
-│       ├── Email: hello@tieralto.com
+│       ├── Email: info@tieralto.com
 │       └── Phone: 1-678-699-5935
 │
 │
@@ -219,7 +219,7 @@ tieralto.com/
     │   ├── TIERALTO wordmark
     │   ├── Tagline: "Where Expertise Meets Accountability."
     │   ├── Phone: 1-678-699-5935
-    │   └── Email: hello@tieralto.com
+    │   └── Email: info@tieralto.com
     ├── Column 2 — Navigation:
     │   ├── Services ............. /services
     │   ├── Field Notes .......... /field-notes
@@ -281,7 +281,7 @@ WIDGETS (3 global components)
 
 CONTACT
 ├── Phone .......................... 1-678-699-5935
-├── Email .......................... hello@tieralto.com
+├── Email .......................... info@tieralto.com
 └── Discovery Call ................. Free · 30 min · Phone / Zoom / Teams
 
 IMAGE ASSETS
