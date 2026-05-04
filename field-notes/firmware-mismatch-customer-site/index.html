@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Firmware Problem That Only Shows Up at the Customer Site | TierAlto Field Notes</title>
-  <meta name="description" content="Why phones work perfectly in the lab but fail at the customer site — and how firmware mismatch is almost always the cause." />
+  <meta name="description" content="Why phones work perfectly in the lab but fail at the customer site - and how firmware mismatch is almost always the cause." />
   <link rel="canonical" href="https://tieralto.com/field-notes/firmware-mismatch-customer-site/" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://tieralto.com/field-notes/firmware-mismatch-customer-site/" />
@@ -22,8 +22,7 @@
   <header class="site-header">
     <nav class="nav container">
       <a href="/" class="nav__brand">
-        <img src="/images/tieralto-icon.svg" alt="TierAlto" class="nav__logo" width="36" height="36">
-        <span class="nav__wordmark">TierAlto</span>
+        <img src="/images/tieralto-icon.svg" alt="TierAlto" class="nav__logo">
       </a>
       <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -47,7 +46,7 @@
         <h1>The firmware problem that only shows up at the customer site</h1>
         <p class="post-meta">3 min read</p>
         <div class="post-byline">
-          <img src="/images/tieralto-icon.svg" alt="TierAlto icon" width="20" height="20">
+          <img src="/images/tieralto-icon.svg" alt="TierAlto icon">
           <span>TierAlto</span>
         </div>
       </div>
@@ -60,7 +59,7 @@
 
           <h2>The Problem</h2>
           <p>You stage a batch of phones. You test them. Everything works. The devices ship. The installer plugs them in at the customer site. Half of them go into a boot loop or register without audio or lose their configuration entirely.</p>
-          <p>What happened? The devices registered with the customer&rsquo;s provisioning server, which pushed a firmware update automatically. The update changed something &mdash; a parameter name, a codec negotiation behavior, a configuration file path &mdash; and the configuration you loaded at the warehouse no longer applies correctly.</p>
+          <p>What happened? The devices registered with the customer&rsquo;s provisioning server, which pushed a firmware update automatically. The update changed something - a parameter name, a codec negotiation behavior, a configuration file path - and the configuration you loaded at the warehouse no longer applies correctly.</p>
 
           <h2>Why It Happens</h2>
           <p>Most enterprise and carrier provisioning platforms include an auto-firmware-update policy. When a device registers for the first time, the server checks whether the firmware version matches the required version and updates it if not.</p>
@@ -68,21 +67,21 @@
           <ul>
             <li>The firmware you staged in the warehouse may not be the firmware that runs at the customer site</li>
             <li>The configuration you applied may have been validated against the wrong firmware version</li>
-            <li>The auto-update happens silently &mdash; the device does not tell you why it is rebooting or what changed</li>
+            <li>The auto-update happens silently - the device does not tell you why it is rebooting or what changed</li>
           </ul>
           <p>This failure mode is especially common when staging operations have not received explicit firmware version requirements from the customer or reseller, or when they assume the latest firmware is always correct.</p>
 
           <h2>The Fix</h2>
           <p>Three things prevent this problem:</p>
           <ul>
-            <li><strong>Get the firmware requirement in writing.</strong> Before staging a single device, confirm the exact firmware version required by the destination platform. Not the latest version &mdash; the required version. These are often different.</li>
+            <li><strong>Get the firmware requirement in writing.</strong> Before staging a single device, confirm the exact firmware version required by the destination platform. Not the latest version - the required version. These are often different.</li>
             <li><strong>Stage and validate against that specific firmware.</strong> Load the required version, apply the configuration, and validate. Do not let the device upgrade after staging.</li>
             <li><strong>Coordinate with the provisioning server operator.</strong> If the server auto-upgrades, the staging operation needs to know what the target firmware is after that upgrade, and the configuration needs to be validated against that version, not the pre-upgrade version.</li>
           </ul>
 
           <h2>What This Tells You</h2>
           <p>Firmware compatibility is not a detail. It is the foundation that everything else sits on. A configuration that is perfect for firmware 7.1.2 may fail silently on firmware 7.2.0 because a parameter was deprecated, a default value changed, or a codec behavior was updated.</p>
-          <p>The staging operations that have eliminated this class of failure are the ones that have built firmware version requirements into their intake process &mdash; not as an afterthought, but as a blocking requirement before a device gets staged.</p>
+          <p>The staging operations that have eliminated this class of failure are the ones that have built firmware version requirements into their intake process - not as an afterthought, but as a blocking requirement before a device gets staged.</p>
 
           <div class="post-cta">
             <h3>Dealing with field failures after pre-shipment staging?</h3>
@@ -93,8 +92,8 @@
           <div class="related-posts">
             <h3>Related Field Notes</h3>
             <ul class="related-posts__list">
-              <li><a href="/field-notes/distributor-failure-rate/">Why your distributor&rsquo;s failure rate is not their fault &mdash; and how to fix it</a></li>
-              <li><a href="/field-notes/sip-registration-failure-causes/">Three reasons a phone fails to register after deployment &mdash; and none of them are the phone</a></li>
+              <li><a href="/field-notes/distributor-failure-rate/">Why your distributor&rsquo;s failure rate is not their fault - and how to fix it</a></li>
+              <li><a href="/field-notes/sip-registration-failure-causes/">Three reasons a phone fails to register after deployment - and none of them are the phone</a></li>
             </ul>
           </div>
         </div>
@@ -106,7 +105,7 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <img src="/images/tieralto-logo-white.svg" alt="TierAlto" class="footer__logo" width="120">
+          <img src="/images/tieralto-logo-white.svg" alt="TierAlto" class="footer__logo">
           <span class="footer__tagline">Where Expertise Meets Accountability.</span>
           <a href="mailto:hello@tieralto.com">hello@tieralto.com</a>
           <a href="tel:16786995935" class="footer__phone">1-678-699-5935</a>
@@ -121,13 +120,26 @@
         <div class="footer__newsletter">
           <p class="footer__newsletter-title">Stay Sharp.</p>
           <p class="footer__newsletter-sub">Get Field Notes delivered when they publish.</p>
-          <form class="newsletter-form" action="#" method="post">
-            <input type="hidden" name="form-name" value="newsletter-footer">
-            <div class="newsletter-form__row">
-              <input type="email" name="email" placeholder="Email address" required class="newsletter-form__input newsletter-form__input--dark">
-              <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
-            </div>
-            <p class="newsletter-form__success" hidden>Subscribed!</p>
+          <form method="POST"
+                action="https://rndcw-zngp.maillist-manage.com/weboptin.zc"
+                target="_zcSignup"
+                style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <input type="text"
+                   name="CONTACT_EMAIL"
+                   placeholder="Your email address"
+                   changeitem="SIGNUP_FORM_FIELD"
+                   style="flex:1;min-width:160px;padding:10px 14px;border:1px solid rgba(255,255,255,0.3);border-radius:6px;background:rgba(255,255,255,0.1);color:#fff;font-size:14px;font-family:inherit;outline:none;">
+            <input type="submit"
+                   value="Subscribe"
+                   style="padding:10px 20px;background:#028090;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:500;cursor:pointer;white-space:nowrap;">
+            <input type="hidden" name="submitType" value="optinCustomView">
+            <input type="hidden" name="formType" value="QuickForm">
+            <input type="hidden" name="zx" value="135e35420">
+            <input type="hidden" name="zcvers" value="3.0">
+            <input type="hidden" name="mode" value="OptinCreateView">
+            <input type="hidden" name="zcld" value="1168f615316ff573b">
+            <input type="hidden" name="zc_trackCode" value="ZCFORMVIEW">
+            <input type="hidden" name="zc_formIx" value="3z22b6092094ce8c065887785ba29e301029c300b378c95f1053e719d8a1e7574a">
           </form>
         </div>
       </div>
@@ -151,13 +163,13 @@
     </button>
     <div class="chatbot__panel" id="chatbot-panel">
       <div class="chatbot__header">
-        <img src="/images/tieralto-logo-horizontal.svg" alt="TierAlto" class="chatbot__logo" width="120">
+        <img src="/images/tieralto-logo-horizontal.svg" alt="TierAlto" class="chatbot__logo">
         <span class="chatbot__subtitle">Chat with us</span>
         <button class="chatbot__close" id="chatbot-close" aria-label="Close chat">&times;</button>
       </div>
       <div class="chatbot__messages" id="chatbot-messages">
         <div class="chatbot__message chatbot__message--bot">
-          <p>Hi &mdash; I&rsquo;m TierAlto&rsquo;s assistant. I can answer questions about our services, provisioning, or help you book a discovery call. What are you working on?</p>
+          <p>Hi - I&rsquo;m TierAlto&rsquo;s assistant. I can answer questions about our services, provisioning, or help you book a discovery call. What are you working on?</p>
         </div>
       </div>
       <div class="chatbot__input-row">
@@ -175,9 +187,9 @@
   <div id="ta-exit-overlay" role="dialog" aria-modal="true" aria-labelledby="ta-exit-headline">
     <div id="ta-exit-modal">
       <button id="ta-exit-close" aria-label="Close popup">&times;</button>
-      <img src="/images/tieralto-icon.svg" alt="TierAlto" width="36" height="36"/>
-      <h2 id="ta-exit-headline">Before you go — stay sharp.</h2>
-      <p>Get Field Notes delivered when published. Real problems, real fixes — no marketing, no product pitches.</p>
+      <img src="/images/tieralto-icon.svg" alt="TierAlto"/>
+      <h2 id="ta-exit-headline">Before you go - stay sharp.</h2>
+      <p>Get Field Notes delivered when published. Real problems, real fixes - no marketing, no product pitches.</p>
       <form id="ta-exit-form">
         <input
           type="email"

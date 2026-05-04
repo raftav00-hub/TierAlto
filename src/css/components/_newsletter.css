@@ -11,7 +11,7 @@
   margin-bottom: 0.5rem;
 }
 .newsletter-strip__text p {
-  color: rgba(255,255,255,0.8);
+  color: #ffffff;
 }
 .newsletter-form__row {
   display: flex;

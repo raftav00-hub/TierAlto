@@ -1,0 +1,27 @@
+# TierAlto - Exit Intent Popup HTML Snippet
+# Add this block to EVERY HTML page, just before the closing </body> tag.
+# It must exist in the HTML for the JS to find it.
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- EXIT INTENT POPUP - paste before </body> on every page    -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="ta-exit-overlay" role="dialog" aria-modal="true" aria-labelledby="ta-exit-headline">
+  <div id="ta-exit-modal">
+    <button id="ta-exit-close" aria-label="Close popup">×</button>
+    <img src="/images/tieralto-icon.svg" alt="TierAlto"/>
+    <h2 id="ta-exit-headline">Before you go - stay sharp.</h2>
+    <p>Get Field Notes delivered when published. Real problems, real fixes - no marketing, no product pitches.</p>
+    <form id="ta-exit-form">
+      <input
+        type="email"
+        id="ta-ep-email"
+        placeholder="Your email address"
+        autocomplete="email"
+        required
+      />
+      <button type="submit" id="ta-ep-submit">Get Field Notes</button>
+    </form>
+    <button id="ta-exit-dismiss">No thanks</button>
+  </div>
+</div>
+<!-- ═══════════════════════════════════════════════════════════ -->

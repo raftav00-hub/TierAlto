@@ -35,7 +35,7 @@
 /* Primary — teal */
 .btn--primary {
   background-color: var(--color-teal);
-  color: #fff;
+  color: #ffffff;
   border-color: var(--color-teal);
 }
 
@@ -73,7 +73,7 @@
 .btn--ghost {
   background-color: transparent;
   border-color: rgba(255,255,255,0.35);
-  color: #fff;
+  color: #ffffff;
 }
 
 .btn--ghost:hover {

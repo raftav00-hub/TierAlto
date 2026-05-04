@@ -22,8 +22,7 @@
   <header class="site-header">
     <nav class="nav container">
       <a href="/" class="nav__brand">
-        <img src="/images/tieralto-icon.svg" alt="TierAlto" class="nav__logo" width="36" height="36">
-        <span class="nav__wordmark">TierAlto</span>
+        <img src="/images/tieralto-icon.svg" alt="TierAlto" class="nav__logo">
       </a>
       <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -44,10 +43,10 @@
     <section class="page-header">
       <div class="container">
         <span class="post-topic-pill">Provisioning</span>
-        <h1>Why your distributor&rsquo;s failure rate is not their fault &mdash; and how to fix it</h1>
+        <h1>Why your distributor&rsquo;s failure rate is not their fault - and how to fix it</h1>
         <p class="post-meta">4 min read</p>
         <div class="post-byline">
-          <img src="/images/tieralto-icon.svg" alt="TierAlto icon" width="20" height="20">
+          <img src="/images/tieralto-icon.svg" alt="TierAlto icon">
           <span>TierAlto</span>
         </div>
       </div>
@@ -56,7 +55,7 @@
     <section class="section section--white">
       <div class="container">
         <div class="post-content">
-          <p class="post-summary">Most provisioning failures at the distributor level trace back to a structural problem in how distributors are asked to stage devices &mdash; not a competence problem on their end.</p>
+          <p class="post-summary">Most provisioning failures at the distributor level trace back to a structural problem in how distributors are asked to stage devices - not a competence problem on their end.</p>
 
           <h2>The Problem</h2>
           <p>When a channel partner or carrier asks their distributor to ship pre-configured phones, they are usually sending the configuration data at the same time the order is being picked. That means the warehouse team is trying to configure devices with incomplete information, against a deadline, using a provisioning platform designed for someone else&rsquo;s workflow.</p>
@@ -66,7 +65,7 @@
           <p>There are three structural issues that show up repeatedly:</p>
           <ul>
             <li><strong>Late data delivery.</strong> Configuration data (extensions, usernames, passwords, platform credentials) arrives too close to the ship date for any quality check to happen.</li>
-            <li><strong>Platform dependency.</strong> The distributor is required to use the carrier or reseller&rsquo;s provisioning platform &mdash; which was built for their workflow, not for high-volume warehouse staging.</li>
+            <li><strong>Platform dependency.</strong> The distributor is required to use the carrier or reseller&rsquo;s provisioning platform - which was built for their workflow, not for high-volume warehouse staging.</li>
             <li><strong>No validation step.</strong> There is no systematic way to confirm a device was configured correctly before it ships. Testing happens at the customer site, which is the worst possible place to discover a problem.</li>
           </ul>
 
@@ -74,14 +73,14 @@
           <p>The fix is not buying better provisioning software. It is restructuring the process.</p>
           <p>Specifically:</p>
           <ul>
-            <li>Configuration data should arrive at least 72 hours before the ship date &mdash; with a hard cutoff enforced in the order process.</li>
+            <li>Configuration data should arrive at least 72 hours before the ship date - with a hard cutoff enforced in the order process.</li>
             <li>The distributor should have their own provisioning workflow that is not dependent on any single carrier or reseller&rsquo;s platform. This means owning the configuration templates and being able to stage any device for any platform without waiting for platform access to be granted.</li>
             <li>Every device batch should include a validation step before shipping. Even a basic one: apply config, boot device, confirm registration with a test extension. This surfaces 80% of configuration failures before they become field problems.</li>
           </ul>
 
           <h2>What This Tells You</h2>
-          <p>If your distributor is shipping devices with a consistent failure rate, the first question is not what they are doing wrong &mdash; it is what the process is asking them to do. Most of the time, the answer is: too much, too fast, with too little control over the tools they are using.</p>
-          <p>The distributors who have solved this problem are the ones who invested in their own provisioning infrastructure. Not a vendor-managed service &mdash; their own workflow, their own templates, their own validation step. That investment pays back in reduced field callbacks, faster installs, and the ability to offer pre-configuration as a premium service instead of a cost center.</p>
+          <p>If your distributor is shipping devices with a consistent failure rate, the first question is not what they are doing wrong - it is what the process is asking them to do. Most of the time, the answer is: too much, too fast, with too little control over the tools they are using.</p>
+          <p>The distributors who have solved this problem are the ones who invested in their own provisioning infrastructure. Not a vendor-managed service - their own workflow, their own templates, their own validation step. That investment pays back in reduced field callbacks, faster installs, and the ability to offer pre-configuration as a premium service instead of a cost center.</p>
 
           <div class="post-cta">
             <h3>Working on a distributor provisioning problem?</h3>
@@ -93,7 +92,7 @@
             <h3>Related Field Notes</h3>
             <ul class="related-posts__list">
               <li><a href="/field-notes/firmware-mismatch-customer-site/">The firmware problem that only shows up at the customer site</a></li>
-              <li><a href="/field-notes/sip-registration-failure-causes/">Three reasons a phone fails to register after deployment &mdash; and none of them are the phone</a></li>
+              <li><a href="/field-notes/sip-registration-failure-causes/">Three reasons a phone fails to register after deployment - and none of them are the phone</a></li>
             </ul>
           </div>
         </div>
@@ -105,7 +104,7 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <img src="/images/tieralto-logo-white.svg" alt="TierAlto" class="footer__logo" width="120">
+          <img src="/images/tieralto-logo-white.svg" alt="TierAlto" class="footer__logo">
           <span class="footer__tagline">Where Expertise Meets Accountability.</span>
           <a href="mailto:hello@tieralto.com">hello@tieralto.com</a>
           <a href="tel:16786995935" class="footer__phone">1-678-699-5935</a>
@@ -120,13 +119,26 @@
         <div class="footer__newsletter">
           <p class="footer__newsletter-title">Stay Sharp.</p>
           <p class="footer__newsletter-sub">Get Field Notes delivered when they publish.</p>
-          <form class="newsletter-form" action="#" method="post">
-            <input type="hidden" name="form-name" value="newsletter-footer">
-            <div class="newsletter-form__row">
-              <input type="email" name="email" placeholder="Email address" required class="newsletter-form__input newsletter-form__input--dark">
-              <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
-            </div>
-            <p class="newsletter-form__success" hidden>Subscribed!</p>
+          <form method="POST"
+                action="https://rndcw-zngp.maillist-manage.com/weboptin.zc"
+                target="_zcSignup"
+                style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <input type="text"
+                   name="CONTACT_EMAIL"
+                   placeholder="Your email address"
+                   changeitem="SIGNUP_FORM_FIELD"
+                   style="flex:1;min-width:160px;padding:10px 14px;border:1px solid rgba(255,255,255,0.3);border-radius:6px;background:rgba(255,255,255,0.1);color:#fff;font-size:14px;font-family:inherit;outline:none;">
+            <input type="submit"
+                   value="Subscribe"
+                   style="padding:10px 20px;background:#028090;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:500;cursor:pointer;white-space:nowrap;">
+            <input type="hidden" name="submitType" value="optinCustomView">
+            <input type="hidden" name="formType" value="QuickForm">
+            <input type="hidden" name="zx" value="135e35420">
+            <input type="hidden" name="zcvers" value="3.0">
+            <input type="hidden" name="mode" value="OptinCreateView">
+            <input type="hidden" name="zcld" value="1168f615316ff573b">
+            <input type="hidden" name="zc_trackCode" value="ZCFORMVIEW">
+            <input type="hidden" name="zc_formIx" value="3z22b6092094ce8c065887785ba29e301029c300b378c95f1053e719d8a1e7574a">
           </form>
         </div>
       </div>
@@ -150,13 +162,13 @@
     </button>
     <div class="chatbot__panel" id="chatbot-panel">
       <div class="chatbot__header">
-        <img src="/images/tieralto-logo-horizontal.svg" alt="TierAlto" class="chatbot__logo" width="120">
+        <img src="/images/tieralto-logo-horizontal.svg" alt="TierAlto" class="chatbot__logo">
         <span class="chatbot__subtitle">Chat with us</span>
         <button class="chatbot__close" id="chatbot-close" aria-label="Close chat">&times;</button>
       </div>
       <div class="chatbot__messages" id="chatbot-messages">
         <div class="chatbot__message chatbot__message--bot">
-          <p>Hi &mdash; I&rsquo;m TierAlto&rsquo;s assistant. I can answer questions about our services, provisioning, or help you book a discovery call. What are you working on?</p>
+          <p>Hi - I&rsquo;m TierAlto&rsquo;s assistant. I can answer questions about our services, provisioning, or help you book a discovery call. What are you working on?</p>
         </div>
       </div>
       <div class="chatbot__input-row">
@@ -174,9 +186,9 @@
   <div id="ta-exit-overlay" role="dialog" aria-modal="true" aria-labelledby="ta-exit-headline">
     <div id="ta-exit-modal">
       <button id="ta-exit-close" aria-label="Close popup">&times;</button>
-      <img src="/images/tieralto-icon.svg" alt="TierAlto" width="36" height="36"/>
-      <h2 id="ta-exit-headline">Before you go — stay sharp.</h2>
-      <p>Get Field Notes delivered when published. Real problems, real fixes — no marketing, no product pitches.</p>
+      <img src="/images/tieralto-icon.svg" alt="TierAlto"/>
+      <h2 id="ta-exit-headline">Before you go - stay sharp.</h2>
+      <p>Get Field Notes delivered when published. Real problems, real fixes - no marketing, no product pitches.</p>
       <form id="ta-exit-form">
         <input
           type="email"

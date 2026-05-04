@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Three Reasons a Phone Fails to Register After Deployment | TierAlto Field Notes</title>
-  <meta name="description" content="SIP registration failures after deployment almost always trace to one of three root causes — none of which are the phone itself." />
+  <meta name="description" content="SIP registration failures after deployment almost always trace to one of three root causes - none of which are the phone itself." />
   <link rel="canonical" href="https://tieralto.com/field-notes/sip-registration-failure-causes/" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://tieralto.com/field-notes/sip-registration-failure-causes/" />
@@ -22,8 +22,7 @@
   <header class="site-header">
     <nav class="nav container">
       <a href="/" class="nav__brand">
-        <img src="/images/tieralto-icon.svg" alt="TierAlto" class="nav__logo" width="36" height="36">
-        <span class="nav__wordmark">TierAlto</span>
+        <img src="/images/tieralto-icon.svg" alt="TierAlto" class="nav__logo">
       </a>
       <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -44,10 +43,10 @@
     <section class="page-header">
       <div class="container">
         <span class="post-topic-pill">SIP / VoIP</span>
-        <h1>Three reasons a phone fails to register after deployment &mdash; and none of them are the phone</h1>
+        <h1>Three reasons a phone fails to register after deployment - and none of them are the phone</h1>
         <p class="post-meta">5 min read</p>
         <div class="post-byline">
-          <img src="/images/tieralto-icon.svg" alt="TierAlto icon" width="20" height="20">
+          <img src="/images/tieralto-icon.svg" alt="TierAlto icon">
           <span>TierAlto</span>
         </div>
       </div>
@@ -56,15 +55,15 @@
     <section class="section section--white">
       <div class="container">
         <div class="post-content">
-          <p class="post-summary">When a phone fails to register at a customer site, the first instinct is to blame the device. In most cases, the device is doing exactly what it was configured to do &mdash; and the problem is somewhere else entirely.</p>
+          <p class="post-summary">When a phone fails to register at a customer site, the first instinct is to blame the device. In most cases, the device is doing exactly what it was configured to do - and the problem is somewhere else entirely.</p>
 
           <h2>Why this matters</h2>
-          <p>SIP registration failure is the most common post-deployment support call. It is also the most expensive &mdash; because the instinct is to dispatch a technician, swap the device, or open a ticket with the vendor. Most of the time, none of that is necessary. The root cause is almost always one of three things.</p>
+          <p>SIP registration failure is the most common post-deployment support call. It is also the most expensive - because the instinct is to dispatch a technician, swap the device, or open a ticket with the vendor. Most of the time, none of that is necessary. The root cause is almost always one of three things.</p>
 
           <h2>Cause 1: Credential mismatch</h2>
           <p>The SIP credentials on the device do not match what is provisioned on the platform. This sounds obvious, but it is far more common than it should be.</p>
-          <p>It happens because credential data passes through multiple hands &mdash; from the platform administrator to the reseller to the staging operation &mdash; and something gets transcribed incorrectly somewhere in that chain. A space in a username. A capitalization difference in a password. A domain name with a typo that is invisible in most fonts.</p>
-          <p>The fix is a validation step in the staging process that confirms credentials against the platform before the device ships &mdash; not at the customer site after the fact.</p>
+          <p>It happens because credential data passes through multiple hands - from the platform administrator to the reseller to the staging operation - and something gets transcribed incorrectly somewhere in that chain. A space in a username. A capitalization difference in a password. A domain name with a typo that is invisible in most fonts.</p>
+          <p>The fix is a validation step in the staging process that confirms credentials against the platform before the device ships - not at the customer site after the fact.</p>
 
           <h2>Cause 2: Network configuration problem</h2>
           <p>The device is reaching the network correctly but cannot reach the registrar. This usually means one of three things:</p>
@@ -77,14 +76,14 @@
           <p>The diagnostic here is straightforward: put the device on a known-good network (a hotspot or another site that works) and attempt registration. If it registers immediately, the problem is the customer&rsquo;s network, not the device or the configuration.</p>
 
           <h2>Cause 3: Provisioning server conflict</h2>
-          <p>The device is reaching a provisioning server that is overwriting the configuration applied during staging. This is the most insidious failure because everything looks correct on the surface &mdash; the device boots, it reaches the network, it contacts the registrar &mdash; and then something happens and registration fails.</p>
+          <p>The device is reaching a provisioning server that is overwriting the configuration applied during staging. This is the most insidious failure because everything looks correct on the surface - the device boots, it reaches the network, it contacts the registrar - and then something happens and registration fails.</p>
           <p>What happened is that the provisioning server pushed a configuration that replaced the staging configuration. The replacement may have incorrect credentials, a different SIP proxy address, or missing parameters that the device requires to register correctly.</p>
-          <p>The fix requires knowing which provisioning server the device will contact after deployment, and ensuring that the configuration on that server matches what was validated during staging. This is an information problem, not a technical one &mdash; the staging operation needs this information before the device ships.</p>
+          <p>The fix requires knowing which provisioning server the device will contact after deployment, and ensuring that the configuration on that server matches what was validated during staging. This is an information problem, not a technical one - the staging operation needs this information before the device ships.</p>
 
           <h2>What This Tells You</h2>
           <p>The pattern across all three causes is the same: the failure happens because something the staging operation did not know about, or did not have control over, changed the environment the device landed in.</p>
-          <p>Registration failure is almost always diagnostic of a process problem upstream &mdash; in how information flows from the platform operator to the staging operation, in how network requirements are communicated to the customer, or in how provisioning server configurations are coordinated across teams.</p>
-          <p>The organizations that have reduced their registration failure rate to near zero are the ones that built a structured intake process that collects all of this information before staging begins &mdash; and validates it, not assumes it.</p>
+          <p>Registration failure is almost always diagnostic of a process problem upstream - in how information flows from the platform operator to the staging operation, in how network requirements are communicated to the customer, or in how provisioning server configurations are coordinated across teams.</p>
+          <p>The organizations that have reduced their registration failure rate to near zero are the ones that built a structured intake process that collects all of this information before staging begins - and validates it, not assumes it.</p>
 
           <div class="post-cta">
             <h3>Troubleshooting SIP registration failures?</h3>
@@ -95,7 +94,7 @@
           <div class="related-posts">
             <h3>Related Field Notes</h3>
             <ul class="related-posts__list">
-              <li><a href="/field-notes/distributor-failure-rate/">Why your distributor&rsquo;s failure rate is not their fault &mdash; and how to fix it</a></li>
+              <li><a href="/field-notes/distributor-failure-rate/">Why your distributor&rsquo;s failure rate is not their fault - and how to fix it</a></li>
               <li><a href="/field-notes/firmware-mismatch-customer-site/">The firmware problem that only shows up at the customer site</a></li>
             </ul>
           </div>
@@ -108,7 +107,7 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <img src="/images/tieralto-logo-white.svg" alt="TierAlto" class="footer__logo" width="120">
+          <img src="/images/tieralto-logo-white.svg" alt="TierAlto" class="footer__logo">
           <span class="footer__tagline">Where Expertise Meets Accountability.</span>
           <a href="mailto:hello@tieralto.com">hello@tieralto.com</a>
           <a href="tel:16786995935" class="footer__phone">1-678-699-5935</a>
@@ -123,13 +122,26 @@
         <div class="footer__newsletter">
           <p class="footer__newsletter-title">Stay Sharp.</p>
           <p class="footer__newsletter-sub">Get Field Notes delivered when they publish.</p>
-          <form class="newsletter-form" action="#" method="post">
-            <input type="hidden" name="form-name" value="newsletter-footer">
-            <div class="newsletter-form__row">
-              <input type="email" name="email" placeholder="Email address" required class="newsletter-form__input newsletter-form__input--dark">
-              <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
-            </div>
-            <p class="newsletter-form__success" hidden>Subscribed!</p>
+          <form method="POST"
+                action="https://rndcw-zngp.maillist-manage.com/weboptin.zc"
+                target="_zcSignup"
+                style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <input type="text"
+                   name="CONTACT_EMAIL"
+                   placeholder="Your email address"
+                   changeitem="SIGNUP_FORM_FIELD"
+                   style="flex:1;min-width:160px;padding:10px 14px;border:1px solid rgba(255,255,255,0.3);border-radius:6px;background:rgba(255,255,255,0.1);color:#fff;font-size:14px;font-family:inherit;outline:none;">
+            <input type="submit"
+                   value="Subscribe"
+                   style="padding:10px 20px;background:#028090;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:500;cursor:pointer;white-space:nowrap;">
+            <input type="hidden" name="submitType" value="optinCustomView">
+            <input type="hidden" name="formType" value="QuickForm">
+            <input type="hidden" name="zx" value="135e35420">
+            <input type="hidden" name="zcvers" value="3.0">
+            <input type="hidden" name="mode" value="OptinCreateView">
+            <input type="hidden" name="zcld" value="1168f615316ff573b">
+            <input type="hidden" name="zc_trackCode" value="ZCFORMVIEW">
+            <input type="hidden" name="zc_formIx" value="3z22b6092094ce8c065887785ba29e301029c300b378c95f1053e719d8a1e7574a">
           </form>
         </div>
       </div>
@@ -153,13 +165,13 @@
     </button>
     <div class="chatbot__panel" id="chatbot-panel">
       <div class="chatbot__header">
-        <img src="/images/tieralto-logo-horizontal.svg" alt="TierAlto" class="chatbot__logo" width="120">
+        <img src="/images/tieralto-logo-horizontal.svg" alt="TierAlto" class="chatbot__logo">
         <span class="chatbot__subtitle">Chat with us</span>
         <button class="chatbot__close" id="chatbot-close" aria-label="Close chat">&times;</button>
       </div>
       <div class="chatbot__messages" id="chatbot-messages">
         <div class="chatbot__message chatbot__message--bot">
-          <p>Hi &mdash; I&rsquo;m TierAlto&rsquo;s assistant. I can answer questions about our services, provisioning, or help you book a discovery call. What are you working on?</p>
+          <p>Hi - I&rsquo;m TierAlto&rsquo;s assistant. I can answer questions about our services, provisioning, or help you book a discovery call. What are you working on?</p>
         </div>
       </div>
       <div class="chatbot__input-row">
@@ -177,9 +189,9 @@
   <div id="ta-exit-overlay" role="dialog" aria-modal="true" aria-labelledby="ta-exit-headline">
     <div id="ta-exit-modal">
       <button id="ta-exit-close" aria-label="Close popup">&times;</button>
-      <img src="/images/tieralto-icon.svg" alt="TierAlto" width="36" height="36"/>
-      <h2 id="ta-exit-headline">Before you go — stay sharp.</h2>
-      <p>Get Field Notes delivered when published. Real problems, real fixes — no marketing, no product pitches.</p>
+      <img src="/images/tieralto-icon.svg" alt="TierAlto"/>
+      <h2 id="ta-exit-headline">Before you go - stay sharp.</h2>
+      <p>Get Field Notes delivered when published. Real problems, real fixes - no marketing, no product pitches.</p>
       <form id="ta-exit-form">
         <input
           type="email"

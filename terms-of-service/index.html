@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Service | TierAlto</title>
-  <meta name="description" content="TierAlto terms of service — the terms governing use of this website and TierAlto consulting services." />
+  <meta name="description" content="TierAlto terms of service - the terms governing use of this website and TierAlto consulting services." />
   <link rel="canonical" href="https://tieralto.com/terms-of-service/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +18,7 @@
   <header class="site-header">
     <nav class="nav container">
       <a href="/" class="nav__brand">
-        <img src="/images/tieralto-icon.svg" alt="TierAlto" class="nav__logo" width="36" height="36">
-        <span class="nav__wordmark">TierAlto</span>
+        <img src="/images/tieralto-icon.svg" alt="TierAlto" class="nav__logo">
       </a>
       <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -51,7 +50,7 @@
           <p>By accessing tieralto.com, you agree to use this website for lawful purposes only. You may not use this site in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website.</p>
 
           <h2 style="color:var(--color-text-heading);margin-top:var(--space-10);margin-bottom:var(--space-4);">Intellectual Property</h2>
-          <p>All content on this website &mdash; including text, graphics, and code &mdash; is the property of TierAlto LLC unless otherwise noted. You may not reproduce, distribute, or create derivative works from this content without written permission.</p>
+          <p>All content on this website - including text, graphics, and code - is the property of TierAlto LLC unless otherwise noted. You may not reproduce, distribute, or create derivative works from this content without written permission.</p>
 
           <h2 style="color:var(--color-text-heading);margin-top:var(--space-10);margin-bottom:var(--space-4);">Consulting Services</h2>
           <p>Consulting services provided by TierAlto LLC are governed by the written scope of work agreed between TierAlto and the client prior to the commencement of work. These terms of service govern use of this website only and do not constitute a service agreement.</p>
@@ -78,7 +77,7 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <img src="/images/tieralto-logo-white.svg" alt="TierAlto" class="footer__logo" width="120">
+          <img src="/images/tieralto-logo-white.svg" alt="TierAlto" class="footer__logo">
           <span class="footer__tagline">Where Expertise Meets Accountability.</span>
           <a href="mailto:hello@tieralto.com">hello@tieralto.com</a>
           <a href="tel:16786995935" class="footer__phone">1-678-699-5935</a>
@@ -93,13 +92,26 @@
         <div class="footer__newsletter">
           <p class="footer__newsletter-title">Stay Sharp.</p>
           <p class="footer__newsletter-sub">Get Field Notes delivered when they publish.</p>
-          <form class="newsletter-form" action="#" method="post">
-            <input type="hidden" name="form-name" value="newsletter-footer">
-            <div class="newsletter-form__row">
-              <input type="email" name="email" placeholder="Email address" required class="newsletter-form__input newsletter-form__input--dark">
-              <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
-            </div>
-            <p class="newsletter-form__success" hidden>Subscribed!</p>
+          <form method="POST"
+                action="https://rndcw-zngp.maillist-manage.com/weboptin.zc"
+                target="_zcSignup"
+                style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <input type="text"
+                   name="CONTACT_EMAIL"
+                   placeholder="Your email address"
+                   changeitem="SIGNUP_FORM_FIELD"
+                   style="flex:1;min-width:160px;padding:10px 14px;border:1px solid rgba(255,255,255,0.3);border-radius:6px;background:rgba(255,255,255,0.1);color:#fff;font-size:14px;font-family:inherit;outline:none;">
+            <input type="submit"
+                   value="Subscribe"
+                   style="padding:10px 20px;background:#028090;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:500;cursor:pointer;white-space:nowrap;">
+            <input type="hidden" name="submitType" value="optinCustomView">
+            <input type="hidden" name="formType" value="QuickForm">
+            <input type="hidden" name="zx" value="135e35420">
+            <input type="hidden" name="zcvers" value="3.0">
+            <input type="hidden" name="mode" value="OptinCreateView">
+            <input type="hidden" name="zcld" value="1168f615316ff573b">
+            <input type="hidden" name="zc_trackCode" value="ZCFORMVIEW">
+            <input type="hidden" name="zc_formIx" value="3z22b6092094ce8c065887785ba29e301029c300b378c95f1053e719d8a1e7574a">
           </form>
         </div>
       </div>
@@ -123,13 +135,13 @@
     </button>
     <div class="chatbot__panel" id="chatbot-panel">
       <div class="chatbot__header">
-        <img src="/images/tieralto-logo-horizontal.svg" alt="TierAlto" class="chatbot__logo" width="120">
+        <img src="/images/tieralto-logo-horizontal.svg" alt="TierAlto" class="chatbot__logo">
         <span class="chatbot__subtitle">Chat with us</span>
         <button class="chatbot__close" id="chatbot-close" aria-label="Close chat">&times;</button>
       </div>
       <div class="chatbot__messages" id="chatbot-messages">
         <div class="chatbot__message chatbot__message--bot">
-          <p>Hi &mdash; I&rsquo;m TierAlto&rsquo;s assistant. I can answer questions about our services, provisioning, or help you book a discovery call. What are you working on?</p>
+          <p>Hi - I&rsquo;m TierAlto&rsquo;s assistant. I can answer questions about our services, provisioning, or help you book a discovery call. What are you working on?</p>
         </div>
       </div>
       <div class="chatbot__input-row">
@@ -147,9 +159,9 @@
   <div id="ta-exit-overlay" role="dialog" aria-modal="true" aria-labelledby="ta-exit-headline">
     <div id="ta-exit-modal">
       <button id="ta-exit-close" aria-label="Close popup">&times;</button>
-      <img src="/images/tieralto-icon.svg" alt="TierAlto" width="36" height="36"/>
-      <h2 id="ta-exit-headline">Before you go — stay sharp.</h2>
-      <p>Get Field Notes delivered when published. Real problems, real fixes — no marketing, no product pitches.</p>
+      <img src="/images/tieralto-icon.svg" alt="TierAlto"/>
+      <h2 id="ta-exit-headline">Before you go - stay sharp.</h2>
+      <p>Get Field Notes delivered when published. Real problems, real fixes - no marketing, no product pitches.</p>
       <form id="ta-exit-form">
         <input
           type="email"
